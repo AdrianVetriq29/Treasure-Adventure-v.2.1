@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AR Bolt Release MP3.mp3-a0a1a407fbe14caa1cfe2b81c45d5feb.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/AR Bolt Release MP3.mp3"
+dest_files=[ "res://.import/AR Bolt Release MP3.mp3-a0a1a407fbe14caa1cfe2b81c45d5feb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

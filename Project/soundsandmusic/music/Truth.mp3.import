@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Truth.mp3-9e870a524166a1fbf9c8118b3cddb037.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/music/Truth.mp3"
+dest_files=[ "res://.import/Truth.mp3-9e870a524166a1fbf9c8118b3cddb037.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

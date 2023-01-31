@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Semi 22LR Reload Part 1 WAV.wav-34c3a75157577473d8e7a76f33cd2e57.sample"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/WAV/Semi 22LR Reload Part 1 WAV.wav"
+dest_files=[ "res://.import/Semi 22LR Reload Part 1 WAV.wav-34c3a75157577473d8e7a76f33cd2e57.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

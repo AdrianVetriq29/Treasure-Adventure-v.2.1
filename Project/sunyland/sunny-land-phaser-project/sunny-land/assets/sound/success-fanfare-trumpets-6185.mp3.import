@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/success-fanfare-trumpets-6185.mp3-72f04cd4c4fc030b6a3ee190cff6709b.mp3str"
+
+[deps]
+
+source_file="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/success-fanfare-trumpets-6185.mp3"
+dest_files=[ "res://.import/success-fanfare-trumpets-6185.mp3-72f04cd4c4fc030b6a3ee190cff6709b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

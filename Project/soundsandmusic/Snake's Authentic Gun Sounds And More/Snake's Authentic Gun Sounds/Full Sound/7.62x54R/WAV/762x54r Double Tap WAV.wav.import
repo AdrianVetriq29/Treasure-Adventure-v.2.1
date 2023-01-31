@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/762x54r Double Tap WAV.wav-b50e86d7e76217e7bc321e1acac6cd4b.sample"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Full Sound/7.62x54R/WAV/762x54r Double Tap WAV.wav"
+dest_files=[ "res://.import/762x54r Double Tap WAV.wav-b50e86d7e76217e7bc321e1acac6cd4b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

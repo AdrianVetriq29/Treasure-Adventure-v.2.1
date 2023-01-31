@@ -1,0 +1,1934 @@
+[gd_scene load_steps=97 format=2]
+
+[ext_resource path="res://TilesetTembus.tres" type="TileSet" id=1]
+[ext_resource path="res://Hero_baru.tscn" type="PackedScene" id=2]
+[ext_resource path="res://TmblTouchscreen.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/New Background/game_background_1/layers/rocks_2.png" type="Texture" id=4]
+[ext_resource path="res://assets/New Background/game_background_1/layers/sky.png" type="Texture" id=5]
+[ext_resource path="res://assets/New Background/game_background_1/layers/rocks_1.png" type="Texture" id=6]
+[ext_resource path="res://sunyland/Sunnyland Trees/Sunnyland Trees/Sprites/Sliced Trees/pine.png" type="Texture" id=7]
+[ext_resource path="res://sunyland/Sunnyland Trees/Sunnyland Trees/Sprites/Sliced Trees/tree.png" type="Texture" id=8]
+[ext_resource path="res://Rumah1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://RumahPohon.tscn" type="PackedScene" id=10]
+[ext_resource path="res://sunyland/Sunny Land houses/Sunny Land Trees Props Pack/Props PNG/rock-1.png" type="Texture" id=11]
+[ext_resource path="res://Rumah2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://RumahKayu.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Shop.tscn" type="PackedScene" id=14]
+[ext_resource path="res://StarShop.tscn" type="PackedScene" id=15]
+[ext_resource path="res://PopupMenu2.gd" type="Script" id=16]
+[ext_resource path="res://PopupKalah2.gd" type="Script" id=17]
+[ext_resource path="res://soundsandmusic/music/Possibility.mp3" type="AudioStream" id=18]
+[ext_resource path="res://Kunci.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Peti.gd" type="Script" id=21]
+[ext_resource path="res://PopupMenang2.gd" type="Script" id=22]
+[ext_resource path="res://TilesetPadat.tres" type="TileSet" id=23]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 01.png" type="Texture" id=24]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 04.png" type="Texture" id=25]
+[ext_resource path="res://soundsandmusic/sounds/confirmation_002.ogg" type="AudioStream" id=26]
+[ext_resource path="res://soundsandmusic/sounds/confirmation_001.ogg" type="AudioStream" id=27]
+[ext_resource path="res://assets/Palm Tree Island/Background/Small Cloud 1.png" type="Texture" id=28]
+[ext_resource path="res://assets/Palm Tree Island/Background/Small Cloud 3.png" type="Texture" id=29]
+[ext_resource path="res://assets/Palm Tree Island/Background/Small Cloud 2.png" type="Texture" id=30]
+[ext_resource path="res://Koin.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Diamond.tscn" type="PackedScene" id=32]
+[ext_resource path="res://RedDiamond.tscn" type="PackedScene" id=33]
+[ext_resource path="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/open-door-1-14550.mp3" type="AudioStream" id=34]
+[ext_resource path="res://assets/Wood and Paper UI/Life Bars/Big Bars/1.png" type="Texture" id=35]
+[ext_resource path="res://assets/Wood and Paper UI/Life Bars/Colors/1.png" type="Texture" id=36]
+[ext_resource path="res://assets/Wood and Paper UI/Life Bars/Big Bars/4.png" type="Texture" id=37]
+[ext_resource path="res://Level2.gd" type="Script" id=38]
+[ext_resource path="res://Musuh2.tscn" type="PackedScene" id=39]
+[ext_resource path="res://soundsandmusic/sounds/switch23.ogg" type="AudioStream" id=40]
+[ext_resource path="res://soundsandmusic/sounds/jingles_PIZZA07.ogg" type="AudioStream" id=41]
+[ext_resource path="res://assets/Folks-Normal.ttf" type="DynamicFontData" id=42]
+[ext_resource path="res://assets/Wood and Paper UI/Small Banner/9.png" type="Texture" id=43]
+[ext_resource path="res://assets/Wood and Paper UI/Small Banner/13.png" type="Texture" id=44]
+[ext_resource path="res://assets/Pirate Treasure/Gold Coin/01.png" type="Texture" id=45]
+[ext_resource path="res://assets/Pirate Treasure/Blue Diamond/01.png" type="Texture" id=46]
+[ext_resource path="res://assets/Pirate Treasure/Red Diamond/01.png" type="Texture" id=47]
+[ext_resource path="res://TombolPopup.tres" type="StyleBox" id=48]
+[ext_resource path="res://assets/Wood and Paper UI/Prefabs/6.png" type="Texture" id=49]
+[ext_resource path="res://TombolFont.tres" type="DynamicFont" id=50]
+[ext_resource path="res://Musuh.tscn" type="PackedScene" id=51]
+[ext_resource path="res://assets/Pirate Treasure/Golden Skull/01.png" type="Texture" id=52]
+[ext_resource path="res://RamuanDarah.tscn" type="PackedScene" id=53]
+[ext_resource path="res://Frame_Per_Second.tscn" type="PackedScene" id=54]
+[ext_resource path="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/success-fanfare-trumpets-6185.mp3" type="AudioStream" id=55]
+
+[sub_resource type="RectangleShape2D" id=66]
+extents = Vector2( 16, 1.5 )
+
+[sub_resource type="RectangleShape2D" id=84]
+extents = Vector2( 32, 5 )
+
+[sub_resource type="RectangleShape2D" id=112]
+extents = Vector2( 16.1875, 0.9375 )
+
+[sub_resource type="RectangleShape2D" id=126]
+extents = Vector2( 48, 6.5 )
+
+[sub_resource type="RectangleShape2D" id=132]
+extents = Vector2( 32, 7.25 )
+
+[sub_resource type="RectangleShape2D" id=133]
+extents = Vector2( 63.75, 11.25 )
+
+[sub_resource type="RectangleShape2D" id=134]
+extents = Vector2( 16, 6 )
+
+[sub_resource type="RectangleShape2D" id=136]
+extents = Vector2( 79.75, 8.375 )
+
+[sub_resource type="RectangleShape2D" id=62]
+extents = Vector2( 1472, 17.5 )
+
+[sub_resource type="DynamicFont" id=70]
+size = 10
+font_data = ExtResource( 42 )
+
+[sub_resource type="DynamicFont" id=71]
+size = 10
+font_data = ExtResource( 42 )
+
+[sub_resource type="DynamicFont" id=72]
+size = 10
+font_data = ExtResource( 42 )
+
+[sub_resource type="DynamicFont" id=73]
+size = 12
+extra_spacing_bottom = 6
+font_data = ExtResource( 42 )
+
+[sub_resource type="DynamicFont" id=120]
+size = 14
+font_data = ExtResource( 42 )
+
+[sub_resource type="RectangleShape2D" id=125]
+extents = Vector2( 32, 7 )
+
+[sub_resource type="Animation" id=75]
+length = 0.001
+
+[sub_resource type="Animation" id=76]
+resource_name = "gerak"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1709, 152 ), Vector2( 1841, 152 ), Vector2( 1709, 152 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=107]
+extents = Vector2( 64, 8.5 )
+
+[sub_resource type="Animation" id=110]
+length = 0.001
+
+[sub_resource type="Animation" id=111]
+resource_name = "gerak14"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 2438, 95 ), Vector2( 2438, 223 ), Vector2( 2438, 95 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=101]
+extents = Vector2( 16, 6.25 )
+
+[sub_resource type="Animation" id=102]
+length = 0.001
+
+[sub_resource type="Animation" id=103]
+resource_name = "gerak9"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2.5, 5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1601, 288 ), Vector2( 1601, 130 ), Vector2( 1601, 288 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=137]
+extents = Vector2( 77, 15.7 )
+
+[sub_resource type="Animation" id=89]
+length = 0.001
+
+[sub_resource type="Animation" id=90]
+resource_name = "gerak5"
+length = 2.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1, 2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 221, 338 ), Vector2( 221, 224 ), Vector2( 221, 338 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=88]
+extents = Vector2( 78, 79.5 )
+
+[sub_resource type="Curve2D" id=77]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1920.74, 134.14, 0, 0, 0, 0, 1920.74, 131.766, 0, 0, 0, 0, 1920.74, -59.3541, 0, 0, 0, 0, 2280.42, -59.3541, 0, 0, 0, 0, 2281.34, 130.579 )
+}
+
+[sub_resource type="RectangleShape2D" id=74]
+extents = Vector2( 48.1353, 6.27675 )
+
+[sub_resource type="Animation" id=121]
+length = 0.001
+
+[sub_resource type="Animation" id=122]
+resource_name = "gerak"
+length = 15.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 7.5, 15 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0, 0.0 ]
+}
+
+[sub_resource type="Curve2D" id=127]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 1905.91, 122.269, 0, 0, 0, 0, 1905.91, 244.539, 0, 0, 0, 0, 1802.09, 244.539, 0, 0, 0, 0, 1801.16, 122.269, 0, 0, 0, 0, 1801.16, 122.269, 0, 0, 0, 0, 1905.91, 122.269 )
+}
+
+[sub_resource type="RectangleShape2D" id=128]
+extents = Vector2( 32.0316, 4.38261 )
+
+[sub_resource type="Animation" id=129]
+length = 0.001
+
+[sub_resource type="Animation" id=130]
+resource_name = "gerak"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="Curve2D" id=98]
+_data = {
+"points": PoolVector2Array( -3.27032, -6.64284, 3.27032, 6.64284, 856, 432, 0, 0, 0, 0, 877, 439.766, 0, 0, 0, 0, 894, 437.735, -6.24334, 6.94478, 6.24334, -6.94478, 927, 423.875, -1.78381, 9.36036, 1.78381, -9.36036, 943, 397.469, 6.83794, 6.64284, -6.83794, -6.64284, 936, 367, 9.81096, 3.92531, -9.81096, -3.92531, 914, 355.828, 4.84708, -2.09668, -4.84708, 2.09668, 884, 361.563, 4.45953, -5.737, -4.45953, 5.737, 864, 375.125, 1.18921, -8.45452, -1.18921, 8.45452, 850, 401.531, -5.64873, -5.43505, 5.64873, 5.43505, 856, 432 )
+}
+
+[sub_resource type="RectangleShape2D" id=131]
+extents = Vector2( 47.7882, 9.9389 )
+
+[sub_resource type="Animation" id=99]
+length = 0.001
+
+[sub_resource type="Animation" id=100]
+resource_name = "gerak8"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PathFollow2D:unit_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 1.0 ]
+}
+
+[sub_resource type="DynamicFont" id=135]
+size = 10
+font_data = ExtResource( 42 )
+
+[sub_resource type="RectangleShape2D" id=138]
+extents = Vector2( 17, 12.5 )
+
+[sub_resource type="DynamicFont" id=139]
+font_data = ExtResource( 42 )
+
+[node name="Level2" type="Node2D"]
+script = ExtResource( 38 )
+__meta__ = {
+"_edit_vertical_guides_": [  ]
+}
+
+[node name="TileMapPadat" type="TileMap" parent="."]
+position = Vector2( -2, -1 )
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 32, 32 )
+collision_layer = 2
+collision_mask = 5
+format = 1
+tile_data = PoolIntArray( -65538, 4, 0, -65537, 4, 0, -131072, 4, 0, -131071, 4, 0, -131070, 4, 0, -131069, 4, 0, -131068, 4, 0, -131067, 4, 0, -131066, 4, 0, -131065, 4, 0, -131064, 4, 0, -131063, 4, 0, -131062, 4, 0, -131061, 4, 0, -131060, 4, 0, -131059, 4, 0, -131058, 4, 0, -131057, 4, 0, -131056, 4, 0, -131055, 4, 0, -131054, 4, 0, -131053, 4, 0, -131052, 4, 0, -131051, 4, 0, -131050, 4, 0, -131049, 4, 0, -131048, 4, 0, -131047, 4, 0, -131046, 4, 0, -131045, 4, 0, -131044, 4, 0, -131043, 4, 0, -131042, 4, 0, -131041, 4, 0, -131040, 4, 0, -131039, 4, 0, -131038, 4, 0, -131037, 4, 0, -131036, 4, 0, -131035, 4, 0, -131034, 4, 0, -131033, 4, 0, -131032, 4, 0, -131031, 4, 0, -131030, 4, 0, -131029, 4, 0, -131028, 4, 0, -131027, 4, 0, -131026, 4, 0, -131025, 4, 0, -131024, 4, 0, -131023, 4, 0, -131022, 4, 0, -131021, 4, 0, -131020, 4, 0, -131019, 4, 0, -131018, 4, 0, -131017, 4, 0, -131016, 4, 0, -131015, 4, 0, -131014, 4, 0, -131013, 4, 0, -131012, 4, 0, -131011, 4, 0, -131010, 4, 0, -131009, 4, 0, -131008, 4, 0, -131007, 4, 0, -131006, 4, 0, -131005, 4, 0, -131004, 4, 0, -131003, 4, 0, -131002, 4, 0, -131001, 4, 0, -131000, 4, 0, -130999, 4, 0, -130998, 4, 0, -130997, 4, 0, -130996, 4, 0, -130995, 4, 0, -130994, 4, 0, -130993, 4, 0, -130992, 4, 0, -130991, 4, 0, -130990, 4, 0, -130989, 4, 0, -130988, 4, 0, -130987, 4, 0, -130986, 4, 0, -130985, 4, 0, -130984, 4, 0, -130983, 4, 0, -130982, 4, 0, -130981, 4, 0, -130980, 4, 0, -2, 4, 0, -1, 4, 0, -65536, 4, 0, -65535, 4, 0, -65534, 4, 0, -65533, 4, 0, -65532, 4, 0, -65531, 4, 0, -65530, 4, 0, -65529, 4, 0, -65528, 4, 0, -65527, 4, 0, -65526, 4, 0, -65525, 4, 0, -65524, 4, 0, -65523, 4, 0, -65522, 4, 0, -65521, 4, 0, -65520, 4, 0, -65519, 4, 0, -65518, 4, 0, -65517, 4, 0, -65516, 4, 0, -65515, 4, 0, -65514, 4, 0, -65513, 4, 0, -65512, 4, 0, -65511, 4, 0, -65510, 4, 0, -65509, 4, 0, -65508, 4, 0, -65507, 4, 0, -65506, 4, 0, -65505, 4, 0, -65504, 4, 0, -65503, 4, 0, -65502, 4, 0, -65501, 4, 0, -65500, 4, 0, -65499, 4, 0, -65498, 4, 0, -65497, 4, 0, -65496, 4, 0, -65495, 4, 0, -65494, 4, 0, -65493, 4, 0, -65492, 4, 0, -65491, 4, 0, -65490, 4, 0, -65489, 4, 0, -65488, 4, 0, -65487, 4, 0, -65486, 4, 0, -65485, 4, 0, -65484, 4, 0, -65483, 4, 0, -65482, 4, 0, -65481, 4, 0, -65480, 4, 0, -65479, 4, 0, -65478, 4, 0, -65477, 4, 0, -65476, 4, 0, -65475, 4, 0, -65474, 4, 0, -65473, 4, 0, -65472, 4, 0, -65471, 4, 0, -65470, 4, 0, -65469, 4, 0, -65468, 4, 0, -65467, 4, 0, -65466, 4, 0, -65465, 4, 0, -65464, 4, 0, -65463, 4, 0, -65462, 4, 0, -65461, 4, 0, -65460, 4, 0, -65459, 4, 0, -65458, 4, 0, -65457, 4, 0, -65456, 4, 0, -65455, 4, 0, -65454, 4, 0, -65453, 4, 0, -65452, 4, 0, -65451, 4, 0, -65450, 4, 0, -65449, 4, 0, -65448, 4, 0, -65447, 4, 0, -65446, 4, 0, -65445, 4, 0, -65444, 4, 0, 65534, 4, 0, 65535, 4, 0, 0, 12, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 9, 7, 0, 10, 7, 0, 11, 7, 0, 12, 7, 0, 13, 7, 0, 14, 7, 0, 15, 7, 0, 16, 7, 0, 17, 7, 0, 18, 7, 0, 19, 7, 0, 20, 7, 0, 21, 7, 0, 22, 7, 0, 23, 7, 0, 24, 7, 0, 25, 7, 0, 26, 7, 0, 27, 7, 0, 28, 7, 0, 29, 7, 0, 30, 7, 0, 31, 7, 0, 32, 7, 0, 33, 7, 0, 34, 7, 0, 35, 7, 0, 36, 7, 0, 37, 7, 0, 38, 7, 0, 39, 7, 0, 40, 7, 0, 41, 7, 0, 42, 7, 0, 43, 7, 0, 44, 7, 0, 45, 7, 0, 46, 7, 0, 47, 7, 0, 48, 7, 0, 49, 7, 0, 50, 7, 0, 51, 7, 0, 52, 7, 0, 53, 7, 0, 54, 7, 0, 55, 7, 0, 56, 7, 0, 57, 7, 0, 58, 7, 0, 59, 7, 0, 60, 7, 0, 61, 7, 0, 62, 7, 0, 63, 7, 0, 64, 7, 0, 65, 7, 0, 66, 7, 0, 67, 7, 0, 68, 7, 0, 69, 7, 0, 70, 7, 0, 71, 7, 0, 72, 7, 0, 73, 7, 0, 74, 7, 0, 75, 7, 0, 76, 7, 0, 77, 7, 0, 78, 7, 0, 79, 7, 0, 80, 7, 0, 81, 7, 0, 82, 7, 0, 83, 7, 0, 84, 7, 0, 85, 7, 0, 86, 7, 0, 87, 13, 0, 88, 4, 0, 89, 4, 0, 90, 4, 0, 91, 4, 0, 92, 4, 0, 131070, 4, 0, 131071, 4, 0, 65536, 5, 0, 65623, 3, 0, 65624, 4, 0, 65625, 4, 0, 65626, 4, 0, 65627, 4, 0, 65628, 4, 0, 196606, 4, 0, 196607, 4, 0, 131072, 5, 0, 131159, 3, 0, 131160, 4, 0, 131161, 4, 0, 131162, 4, 0, 131163, 4, 0, 131164, 4, 0, 262142, 4, 0, 262143, 4, 0, 196608, 5, 0, 196695, 3, 0, 196696, 4, 0, 196697, 4, 0, 196698, 4, 0, 196699, 4, 0, 196700, 4, 0, 327678, 4, 0, 327679, 4, 0, 262144, 5, 0, 262231, 3, 0, 262232, 4, 0, 262233, 4, 0, 262234, 4, 0, 262235, 4, 0, 262236, 4, 0, 393214, 4, 0, 393215, 4, 0, 327680, 14, 0, 327681, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 2, 0, 327708, 0, 0, 327709, 1, 0, 327710, 1, 0, 327711, 1, 0, 327712, 1, 0, 327713, 1, 0, 327714, 1, 0, 327715, 2, 0, 327745, 0, 0, 327746, 1, 0, 327747, 1, 0, 327748, 1, 0, 327749, 1, 0, 327750, 2, 0, 327767, 3, 0, 327768, 4, 0, 327769, 4, 0, 327770, 4, 0, 327771, 4, 0, 327772, 4, 0, 458750, 4, 0, 458751, 4, 0, 393216, 4, 0, 393217, 4, 0, 393218, 4, 0, 393219, 4, 0, 393220, 5, 0, 393244, 3, 0, 393245, 4, 0, 393246, 4, 0, 393247, 4, 0, 393248, 4, 0, 393249, 4, 0, 393250, 4, 0, 393251, 5, 0, 393268, 0, 0, 393269, 1, 0, 393270, 1, 0, 393271, 1, 0, 393272, 1, 0, 393273, 1, 0, 393274, 2, 0, 393281, 6, 0, 393282, 7, 0, 393283, 7, 0, 393284, 7, 0, 393285, 7, 0, 393286, 8, 0, 393303, 3, 0, 393304, 4, 0, 393305, 4, 0, 393306, 4, 0, 393307, 4, 0, 393308, 4, 0, 524286, 4, 0, 524287, 4, 0, 458752, 4, 0, 458753, 4, 0, 458754, 4, 0, 458755, 4, 0, 458756, 5, 0, 458763, 1, 0, 458764, 2, 0, 458767, 0, 0, 458768, 1, 0, 458780, 3, 0, 458781, 4, 0, 458782, 4, 0, 458783, 4, 0, 458784, 4, 0, 458785, 4, 0, 458786, 4, 0, 458787, 5, 0, 458804, 6, 0, 458805, 7, 0, 458806, 7, 0, 458807, 7, 0, 458808, 7, 0, 458809, 7, 0, 458810, 8, 0, 458839, 3, 0, 458840, 4, 0, 458841, 4, 0, 458842, 4, 0, 458843, 4, 0, 458844, 4, 0, 589822, 4, 0, 589823, 4, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524292, 14, 0, 524293, 1, 0, 524294, 36, 0, 524295, 43, 0, 524296, 43, 0, 524297, 43, 0, 524298, 43, 0, 524299, 37, 0, 524300, 8, 0, 524303, 3, 0, 524304, 4, 0, 524305, 1, 0, 524306, 1, 0, 524307, 1, 0, 524308, 1, 0, 524309, 1, 0, 524310, 1, 0, 524311, 2, 0, 524316, 6, 0, 524317, 7, 0, 524318, 7, 0, 524319, 7, 0, 524320, 7, 0, 524321, 7, 0, 524322, 7, 0, 524323, 8, 0, 524375, 3, 0, 524376, 4, 0, 524377, 4, 0, 524378, 4, 0, 524379, 4, 0, 524380, 4, 0, 655358, 4, 0, 589824, 12, 0, 589825, 7, 0, 589826, 7, 0, 589827, 7, 0, 589828, 7, 0, 589829, 7, 0, 589830, 8, 0, 589839, 6, 0, 589840, 7, 0, 589841, 7, 0, 589842, 7, 0, 589843, 7, 0, 589844, 7, 0, 589845, 7, 0, 589846, 7, 0, 589847, 8, 0, 589863, 0, 0, 589864, 1, 0, 589865, 1, 0, 589866, 1, 0, 589867, 1, 0, 589868, 1, 0, 589869, 1, 0, 589870, 1, 0, 589871, 1, 0, 589872, 2, 0, 589911, 3, 0, 589912, 4, 0, 589913, 4, 0, 589914, 4, 0, 589915, 4, 0, 589916, 4, 0, 720894, 4, 0, 655360, 5, 0, 655399, 6, 0, 655400, 7, 0, 655401, 7, 0, 655402, 7, 0, 655403, 7, 0, 655404, 7, 0, 655405, 7, 0, 655406, 7, 0, 655407, 7, 0, 655408, 8, 0, 655447, 3, 0, 655448, 4, 0, 655449, 4, 0, 655450, 4, 0, 655451, 4, 0, 655452, 4, 0, 786430, 4, 0, 720896, 5, 0, 720957, 2, 0, 720983, 3, 0, 720984, 4, 0, 720985, 4, 0, 720986, 4, 0, 720987, 4, 0, 720988, 4, 0, 851966, 4, 0, 786432, 5, 0, 786492, 1, 0, 786493, 5, 0, 786519, 3, 0, 786520, 4, 0, 786521, 4, 0, 786522, 4, 0, 786523, 4, 0, 786524, 4, 0, 917502, 4, 0, 851968, 5, 0, 851973, 0, 0, 851974, 1, 0, 851975, 2, 0, 852023, 0, 0, 852024, 1, 0, 852025, 1, 0, 852026, 1, 0, 852027, 1, 0, 852028, 4, 0, 852029, 5, 0, 852037, 0, 0, 852038, 1, 0, 852039, 1, 0, 852040, 1, 0, 852041, 2, 0, 852055, 3, 0, 852056, 4, 0, 852057, 4, 0, 852058, 4, 0, 852059, 4, 0, 852060, 4, 0, 983038, 4, 0, 983039, 4, 0, 917504, 5, 0, 917506, 1, 0, 917507, 1, 0, 917508, 1, 0, 917509, 15, 0, 917510, 4, 0, 917511, 5, 0, 917516, 0, 0, 917517, 1, 0, 917518, 1, 0, 917519, 1, 0, 917520, 1, 0, 917521, 2, 0, 917525, 0, 0, 917526, 1, 0, 917527, 1, 0, 917528, 1, 0, 917529, 1, 0, 917532, 1, 0, 917533, 1, 0, 917534, 1, 0, 917535, 1, 0, 917536, 2, 0, 917540, 0, 0, 917541, 1, 0, 917542, 1, 0, 917543, 1, 0, 917544, 1, 0, 917545, 2, 0, 917549, 0, 0, 917550, 1, 0, 917551, 1, 0, 917552, 1, 0, 917553, 1, 0, 917554, 1, 0, 917555, 2, 0, 917559, 6, 0, 917560, 7, 0, 917561, 7, 0, 917562, 7, 0, 917563, 7, 0, 917564, 7, 0, 917565, 8, 0, 917573, 6, 0, 917574, 7, 0, 917575, 7, 0, 917576, 7, 0, 917577, 8, 0, 917580, 0, 0, 917581, 1, 0, 917582, 1, 0, 917583, 1, 0, 917584, 1, 0, 917585, 1, 0, 917586, 1, 0, 917587, 1, 0, 917588, 1, 0, 917589, 1, 0, 917590, 1, 0, 917591, 15, 0, 917592, 4, 0, 917593, 4, 0, 917594, 4, 0, 917595, 4, 0, 917596, 4, 0, 1048574, 4, 0, 1048575, 4, 0, 983040, 5, 0, 983047, 5, 0, 983052, 3, 0, 983053, 4, 0, 983054, 4, 0, 983055, 4, 0, 983056, 4, 0, 983057, 5, 0, 983061, 3, 0, 983062, 4, 0, 983063, 4, 0, 983064, 4, 0, 983065, 4, 0, 983068, 4, 0, 983069, 4, 0, 983070, 4, 0, 983071, 4, 0, 983072, 5, 0, 983076, 3, 0, 983077, 4, 0, 983078, 4, 0, 983079, 4, 0, 983080, 4, 0, 983081, 5, 0, 983085, 3, 0, 983086, 4, 0, 983087, 4, 0, 983088, 4, 0, 983089, 4, 0, 983090, 4, 0, 983091, 5, 0, 983116, 3, 0, 983117, 4, 0, 983118, 4, 0, 983119, 4, 0, 983120, 4, 0, 983121, 4, 0, 983122, 4, 0, 983123, 4, 0, 983124, 4, 0, 983125, 4, 0, 983126, 4, 0, 983127, 4, 0, 983128, 4, 0, 983129, 4, 0, 983130, 4, 0, 983131, 4, 0, 983132, 4, 0, 1048576, 14, 0, 1048577, 1, 0, 1048578, 1, 0, 1048579, 1, 0, 1048580, 1, 0, 1048581, 1, 0, 1048582, 1, 0, 1048583, 42, 0 )
+
+[node name="TileMapTembus" type="TileMap" parent="."]
+z_index = -1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 196660, 0, 0, 196693, 46, 0, 196695, 46, 0, 262196, 3, 0, 262197, 1, 0, 262227, 46, 0, 327725, 0, 0, 327726, 1, 0, 327727, 1, 0, 327728, 2, 0, 327732, 3, 0, 327733, 4, 0, 327734, 1, 0, 393253, 44, 0, 393254, 45, 0, 393260, 0, 0, 393261, 4, 0, 393262, 4, 0, 393263, 4, 0, 393264, 5, 0, 393301, 46, 0, 458795, 0, 0, 458796, 4, 0, 458797, 4, 0, 458798, 4, 0, 458799, 4, 0, 458800, 5, 0, 458835, 46, 0, 524330, 0, 0, 524331, 4, 0, 524332, 4, 0, 524333, 4, 0, 524334, 4, 0, 524335, 4, 0, 524336, 5, 0, 655359, 4, 0, 589824, 4, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589828, 4, 0, 589829, 4, 0, 589830, 5, 0, 720895, 4, 0, 655360, 4, 0, 655361, 4, 0, 655362, 4, 0, 655363, 4, 0, 655364, 4, 0, 655365, 4, 0, 655366, 5, 0, 655429, 0, 0, 655430, 1, 0, 655442, 0, 0, 655443, 1, 0, 655444, 1, 0, 655445, 1, 0, 655446, 1, 0, 655447, 4, 0, 786431, 4, 0, 720896, 4, 0, 720897, 4, 0, 720898, 4, 0, 720899, 4, 0, 720900, 4, 0, 720901, 4, 0, 720902, 5, 0, 720948, 44, 0, 720949, 45, 0, 720965, 3, 0, 720966, 4, 0, 720967, 1, 0, 720978, 3, 0, 720979, 4, 0, 720980, 4, 0, 720981, 4, 0, 720982, 4, 0, 720983, 4, 0, 851967, 4, 0, 786432, 4, 0, 786433, 4, 0, 786434, 4, 0, 786435, 4, 0, 786436, 4, 0, 786437, 4, 0, 786438, 5, 0, 786458, 0, 0, 786459, 1, 0, 786460, 2, 0, 786501, 3, 0, 786502, 4, 0, 786503, 4, 0, 786504, 1, 0, 786514, 3, 0, 786515, 4, 0, 786516, 4, 0, 786517, 4, 0, 786518, 4, 0, 786519, 4, 0, 917503, 4, 0, 851968, 4, 0, 851969, 4, 0, 851970, 4, 0, 851971, 4, 0, 851972, 4, 0, 851973, 4, 0, 851974, 4, 0, 851987, 46, 0, 851994, 3, 0, 851995, 4, 0, 851996, 5, 0, 852002, 46, 0, 852011, 46, 0, 852050, 3, 0, 852051, 4, 0, 852052, 4, 0, 852053, 4, 0, 852054, 4, 0, 852055, 4, 0, 983039, 4, 0, 917504, 1, 0, 917505, 1, 0, 917506, 4, 0, 917507, 4, 0, 917508, 5, 0, 917509, 4, 0, 917510, 4, 0, 917530, 3, 0, 917531, 4, 0, 917532, 5, 0, 983040, 4, 0, 983041, 4, 0, 983042, 4, 0, 983043, 4, 0, 983044, 5, 0, 983061, 5, 0, 983066, 3, 0, 983067, 4, 0, 983068, 5, 0, 1048580, 5, 0 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="TileMapTembus"]
+collision_layer = 5
+collision_mask = 5
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 464, 450.875 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1680, 97 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1424, 193 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1392, 225 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1360, 257 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2288, 353.75 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2320, 385.5 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2672, 226 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2736, 194 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2736, 98 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2672, 130 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1744, 161.236 )
+shape = SubResource( 66 )
+one_way_collision = true
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2240, 325 )
+shape = SubResource( 84 )
+one_way_collision = true
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1712, 129.063 )
+shape = SubResource( 112 )
+one_way_collision = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 880, 390.5 )
+shape = SubResource( 126 )
+one_way_collision = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1696, 359.25 )
+shape = SubResource( 132 )
+one_way_collision = true
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1216, 199 )
+shape = SubResource( 132 )
+one_way_collision = true
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1504.25, 171.75 )
+shape = SubResource( 133 )
+one_way_collision = true
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1104, 422 )
+shape = SubResource( 134 )
+one_way_collision = true
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 624, 422 )
+shape = SubResource( 134 )
+one_way_collision = true
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 1392, 422 )
+shape = SubResource( 134 )
+one_way_collision = true
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="TileMapTembus/StaticBody2D"]
+position = Vector2( 2704.25, 328.625 )
+shape = SubResource( 136 )
+one_way_collision = true
+
+[node name="Zonajatuh" type="Area2D" parent="."]
+position = Vector2( 440, 536 )
+collision_layer = 16
+collision_mask = 5
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Zonajatuh"]
+position = Vector2( 966, -7.5 )
+shape = SubResource( 62 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Langit" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0, 0 )
+motion_offset = Vector2( 0, -128 )
+motion_mirroring = Vector2( 384, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Langit"]
+position = Vector2( -9.53674e-07, 5.68434e-14 )
+scale = Vector2( 0.2, 0.237037 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/Langit"]
+position = Vector2( 9.53674e-07, -3.8147e-06 )
+scale = Vector2( 0.2, 0.237037 )
+texture = ExtResource( 6 )
+centered = false
+
+[node name="Sprite3" type="Sprite" parent="ParallaxBackground/Langit"]
+position = Vector2( 192, 128 )
+scale = Vector2( 0.2, 0.237037 )
+texture = ExtResource( 4 )
+
+[node name="AwanBesar" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.5, 0.5 )
+motion_offset = Vector2( 0, -80 )
+motion_mirroring = Vector2( 448, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/AwanBesar"]
+visible = false
+scale = Vector2( 0.233333, 0.237 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="AwanKecil" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.7, 0.7 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/AwanKecil"]
+position = Vector2( 42, 44 )
+texture = ExtResource( 28 )
+centered = false
+
+[node name="Sprite2" type="Sprite" parent="ParallaxBackground/AwanKecil"]
+position = Vector2( 202, 83 )
+texture = ExtResource( 28 )
+centered = false
+
+[node name="Sprite4" type="Sprite" parent="ParallaxBackground/AwanKecil"]
+position = Vector2( 608, 58 )
+texture = ExtResource( 28 )
+centered = false
+
+[node name="AwanKecil2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.8, 0.8 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/AwanKecil2"]
+position = Vector2( 408, 49 )
+texture = ExtResource( 30 )
+centered = false
+
+[node name="AwanKecil3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.6, 0.6 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/AwanKecil3"]
+position = Vector2( 727, 43 )
+texture = ExtResource( 29 )
+centered = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="TempatKoin" type="Node2D" parent="."]
+
+[node name="Koin" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 88, 144 )
+
+[node name="Koin1" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 272, 211 )
+
+[node name="Koin2" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 140, 145 )
+
+[node name="Koin3" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 114, 144 )
+
+[node name="Koin4" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 383, 170 )
+
+[node name="Koin5" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 513, 168 )
+
+[node name="Koin6" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 283, 242 )
+
+[node name="Koin54" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 304, 336 )
+
+[node name="Koin60" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 232, 400 )
+
+[node name="Koin61" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 207, 400 )
+
+[node name="Koin62" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 184, 400 )
+
+[node name="Koin55" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 336, 336 )
+
+[node name="Koin56" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 368, 336 )
+
+[node name="Koin86" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 484, 433 )
+
+[node name="Koin85" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 512, 433 )
+
+[node name="Koin82" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 544, 432 )
+
+[node name="Koin81" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 623, 396 )
+
+[node name="Koin57" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 912, 368 )
+
+[node name="Koin80" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 888, 368 )
+
+[node name="Koin58" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 864, 368 )
+
+[node name="Koin7" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 310, 242 )
+
+[node name="Koin8" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 336, 242 )
+
+[node name="Koin9" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 848, 85 )
+
+[node name="Koin10" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 791, 85 )
+
+[node name="Koin11" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 736, 85 )
+
+[node name="Koin12" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 820, 85 )
+
+[node name="Koin13" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 763, 85 )
+
+[node name="Koin14" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 700, 240 )
+
+[node name="Koin15" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 674, 240 )
+
+[node name="Koin16" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 752, 432 )
+
+[node name="Koin19" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 720, 432 )
+
+[node name="Koin18" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 688, 432 )
+
+[node name="Koin17" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 726, 240 )
+
+[node name="Koin63" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1304, 432 )
+
+[node name="Koin66" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1328, 432 )
+
+[node name="Koin67" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1264, 400 )
+
+[node name="Koin64" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1281, 432 )
+
+[node name="Koin65" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1392, 400 )
+
+[node name="Koin68" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1616, 432 )
+
+[node name="Koin69" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1592, 432 )
+
+[node name="Koin70" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1640, 432 )
+
+[node name="Koin71" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1696, 285 )
+
+[node name="Koin72" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1696, 310 )
+
+[node name="Koin73" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1696, 336 )
+
+[node name="Koin88" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1784, 400 )
+
+[node name="Koin89" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1816, 400 )
+
+[node name="Koin20" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1360, 240 )
+
+[node name="Koin21" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1201, 175 )
+
+[node name="Koin22" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1233, 176 )
+
+[node name="Koin23" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1392, 208 )
+
+[node name="Koin24" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1616, 196 )
+
+[node name="Koin25" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1616, 168 )
+
+[node name="Koin28" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1424, 176 )
+
+[node name="Koin35" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1496, 144 )
+
+[node name="Koin37" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2736, 80 )
+
+[node name="Koin78" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2544, 432 )
+
+[node name="Koin101" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2574, 432 )
+
+[node name="Koin100" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2512, 432 )
+
+[node name="Koin38" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2352, 146 )
+
+[node name="Koin41" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2248, 144 )
+
+[node name="Koin96" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2320, 368 )
+
+[node name="Koin97" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2352, 400 )
+
+[node name="Koin98" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2288, 336 )
+
+[node name="Koin42" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2184, 144 )
+
+[node name="Koin83" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1968, 336 )
+
+[node name="Koin84" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1934, 368 )
+
+[node name="Koin90" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2113, 360 )
+
+[node name="Koin91" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2088, 360 )
+
+[node name="Koin92" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2138, 360 )
+
+[node name="Koin51" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2089, 70 )
+
+[node name="Koin52" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2146, 70 )
+
+[node name="Koin53" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2118, 70 )
+
+[node name="Koin43" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1964, 131 )
+
+[node name="Koin45" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1964, 159 )
+
+[node name="Koin87" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1964, 105 )
+
+[node name="Koin46" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1744, 144 )
+
+[node name="Koin47" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1873, 176 )
+
+[node name="Koin48" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1616, 222 )
+
+[node name="Koin49" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1680, 80 )
+
+[node name="Koin50" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1712, 112 )
+
+[node name="Koin44" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2216, 144 )
+
+[node name="Koin39" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2353, 193 )
+
+[node name="Koin93" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2536, 104 )
+
+[node name="Koin94" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2504, 104 )
+
+[node name="Koin95" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2472, 104 )
+
+[node name="Koin102" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2472, 136 )
+
+[node name="Koin103" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2504, 136 )
+
+[node name="Koin104" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2536, 136 )
+
+[node name="Koin59" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2672, 112 )
+
+[node name="Koin74" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2736, 177 )
+
+[node name="Koin99" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2672, 209 )
+
+[node name="Koin105" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2640, 304 )
+
+[node name="Koin106" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2665, 304 )
+
+[node name="Koin107" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2690, 304 )
+
+[node name="Koin40" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 2352, 170 )
+
+[node name="Koin36" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1464, 144 )
+
+[node name="Koin26" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1529, 144 )
+
+[node name="Koin29" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1128, 107 )
+
+[node name="Koin30" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1200, 141 )
+
+[node name="Koin31" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1201, 108 )
+
+[node name="Koin32" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 999, 65 )
+
+[node name="Koin75" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 991, 432 )
+
+[node name="Koin76" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1024, 432 )
+
+[node name="Koin77" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1104, 400 )
+
+[node name="Koin79" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 961, 432 )
+
+[node name="Koin33" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1029, 65 )
+
+[node name="Koin34" parent="TempatKoin" groups=["GrupKoin"] instance=ExtResource( 31 )]
+position = Vector2( 1056, 65 )
+
+[node name="TempatDiamond" type="Node2D" parent="."]
+
+[node name="Diamond2" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 230, 106 )
+collision_layer = 1
+
+[node name="Diamond4" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 622, 151 )
+collision_layer = 1
+
+[node name="Diamond5" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 238, 303 )
+collision_layer = 1
+
+[node name="Diamond6" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 983, 321 )
+collision_layer = 1
+
+[node name="Diamond9" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 919, 58 )
+collision_layer = 1
+
+[node name="Diamond3" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 2672, 88 )
+collision_layer = 1
+
+[node name="Diamond11" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 2673, 399 )
+collision_layer = 1
+
+[node name="Diamond7" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 2242, 50 )
+collision_layer = 1
+
+[node name="Diamond10" parent="TempatDiamond" instance=ExtResource( 32 )]
+position = Vector2( 2236, 362 )
+collision_layer = 1
+
+[node name="GrupRedDiamond" type="Node2D" parent="."]
+
+[node name="RedDiamond" parent="GrupRedDiamond" instance=ExtResource( 33 )]
+position = Vector2( 1796, 94 )
+
+[node name="RedDiamond3" parent="GrupRedDiamond" instance=ExtResource( 33 )]
+position = Vector2( 184, 368 )
+
+[node name="RedDiamond4" parent="GrupRedDiamond" instance=ExtResource( 33 )]
+position = Vector2( 704, 352 )
+
+[node name="RedDiamond2" parent="GrupRedDiamond" instance=ExtResource( 33 )]
+position = Vector2( 2760, 304 )
+
+[node name="Musuh" type="Node2D" parent="."]
+
+[node name="Musuh" parent="Musuh" instance=ExtResource( 51 )]
+position = Vector2( 233, 242 )
+
+[node name="Musuh2" parent="Musuh" instance=ExtResource( 51 )]
+position = Vector2( 679, 242 )
+arah = -1
+
+[node name="Musuh3" parent="Musuh" instance=ExtResource( 51 )]
+position = Vector2( 930, 434 )
+arah = -1
+
+[node name="Musuh4" parent="Musuh" instance=ExtResource( 51 )]
+position = Vector2( 1789, 178 )
+arah = -1
+
+[node name="Musuh6" parent="Musuh" instance=ExtResource( 51 )]
+position = Vector2( 2281, 402 )
+arah = -1
+
+[node name="Musuh7" parent="Musuh" instance=ExtResource( 51 )]
+position = Vector2( 2715, 434 )
+arah = -1
+
+[node name="Musuh5" parent="Musuh" instance=ExtResource( 51 )]
+position = Vector2( 1550, 434 )
+arah = -1
+
+[node name="Musuh3" type="Node2D" parent="."]
+
+[node name="Musuh2" parent="Musuh3" instance=ExtResource( 39 )]
+position = Vector2( 957, 146 )
+arah = -1
+
+[node name="Musuh5" parent="Musuh3" instance=ExtResource( 39 )]
+position = Vector2( 1208, 434 )
+arah = -1
+
+[node name="Musuh4" parent="Musuh3" instance=ExtResource( 39 )]
+position = Vector2( 459, 434 )
+arah = -1
+
+[node name="Musuh3" parent="Musuh3" instance=ExtResource( 39 )]
+position = Vector2( 1379, 275 )
+arah = -1
+
+[node name="Musuh7" parent="Musuh3" instance=ExtResource( 39 )]
+position = Vector2( 2146, 146 )
+arah = -1
+
+[node name="Musuh8" parent="Musuh3" instance=ExtResource( 39 )]
+position = Vector2( 2645, 434 )
+arah = -1
+
+[node name="Musuh6" parent="Musuh3" instance=ExtResource( 39 )]
+position = Vector2( 1866, 403 )
+arah = -1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthBar" type="Control" parent="CanvasLayer"]
+margin_left = 5.0
+margin_top = 3.0
+margin_right = 45.0
+margin_bottom = 43.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HealthBar"]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/separation = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/HealthBar/HBoxContainer"]
+margin_right = 32.0
+margin_bottom = 40.0
+texture = ExtResource( 35 )
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/HealthBar/HBoxContainer"]
+margin_left = 32.0
+margin_right = 64.0
+margin_bottom = 40.0
+texture = ExtResource( 37 )
+
+[node name="TextureProgress" type="TextureProgress" parent="CanvasLayer/HealthBar"]
+anchor_left = 0.175
+anchor_top = -0.1
+anchor_right = 0.175
+anchor_bottom = -0.1
+margin_left = 10.0
+margin_top = 18.0
+margin_right = 53.0
+margin_bottom = 20.0
+value = 100.0
+texture_progress = ExtResource( 36 )
+nine_patch_stretch = true
+
+[node name="CoinBar" type="Control" parent="CanvasLayer"]
+margin_left = 255.0
+margin_top = -7.0
+margin_right = 319.0
+margin_bottom = 31.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/CoinBar"]
+margin_right = 64.0
+margin_bottom = 32.0
+custom_constants/separation = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CoinBar/HBoxContainer"]
+margin_right = 32.0
+margin_bottom = 32.0
+texture = ExtResource( 43 )
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/CoinBar/HBoxContainer"]
+margin_left = 32.0
+margin_right = 64.0
+margin_bottom = 32.0
+texture = ExtResource( 44 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CoinBar"]
+margin_left = 15.0
+margin_top = 7.0
+margin_right = 31.0
+margin_bottom = 23.0
+texture = ExtResource( 45 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="CanvasLayer/CoinBar"]
+anchor_left = -3.984
+anchor_top = -0.211
+anchor_right = -3.984
+anchor_bottom = -0.211
+margin_left = 286.976
+margin_top = 18.018
+margin_right = 316.976
+margin_bottom = 29.018
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 70 )
+text = "0"
+
+[node name="DiamondBar" type="Control" parent="CanvasLayer"]
+margin_left = 255.0
+margin_top = 7.0
+margin_right = 323.0
+margin_bottom = 27.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/DiamondBar"]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/separation = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/DiamondBar/HBoxContainer"]
+margin_right = 32.0
+margin_bottom = 40.0
+texture = ExtResource( 43 )
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/DiamondBar/HBoxContainer"]
+margin_left = 32.0
+margin_right = 64.0
+margin_bottom = 40.0
+texture = ExtResource( 44 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/DiamondBar"]
+margin_left = 12.0
+margin_top = 4.0
+margin_right = 36.0
+margin_bottom = 28.0
+texture = ExtResource( 46 )
+
+[node name="Label" type="Label" parent="CanvasLayer/DiamondBar"]
+margin_left = 32.0
+margin_top = 10.0
+margin_right = 64.0
+margin_bottom = 21.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 71 )
+text = "0"
+
+[node name="RedDiamondBar" type="Control" parent="CanvasLayer"]
+margin_left = 255.0
+margin_top = 21.0
+margin_right = 327.0
+margin_bottom = 46.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/RedDiamondBar"]
+margin_right = 40.0
+margin_bottom = 40.0
+custom_constants/separation = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/RedDiamondBar/HBoxContainer"]
+margin_right = 32.0
+margin_bottom = 40.0
+texture = ExtResource( 43 )
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/RedDiamondBar/HBoxContainer"]
+margin_left = 32.0
+margin_right = 64.0
+margin_bottom = 40.0
+texture = ExtResource( 44 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/RedDiamondBar"]
+margin_left = 12.0
+margin_top = 4.0
+margin_right = 36.0
+margin_bottom = 28.0
+texture = ExtResource( 47 )
+
+[node name="Label" type="Label" parent="CanvasLayer/RedDiamondBar"]
+margin_left = 32.0
+margin_top = 10.0
+margin_right = 40.0
+margin_bottom = 24.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 72 )
+text = "0"
+
+[node name="PopupKalah2" type="CenterContainer" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.0
+margin_top = -250.0
+margin_right = 64.0
+margin_bottom = -122.0
+script = ExtResource( 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PopupKalah2"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 49 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PopupKalah2"]
+margin_left = 34.0
+margin_top = 23.0
+margin_right = 94.0
+margin_bottom = 105.0
+
+[node name="Label" type="Label" parent="CanvasLayer/PopupKalah2/VBoxContainer"]
+margin_right = 60.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 73 )
+text = "Game Over"
+
+[node name="TmblUlangi" type="Button" parent="CanvasLayer/PopupKalah2/VBoxContainer"]
+margin_top = 24.0
+margin_right = 60.0
+margin_bottom = 51.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 50 )
+custom_styles/hover = ExtResource( 48 )
+custom_styles/pressed = ExtResource( 48 )
+custom_styles/focus = ExtResource( 48 )
+custom_styles/disabled = ExtResource( 48 )
+custom_styles/normal = ExtResource( 48 )
+text = "Ulangi"
+
+[node name="TmblKeluar" type="Button" parent="CanvasLayer/PopupKalah2/VBoxContainer"]
+margin_top = 55.0
+margin_right = 60.0
+margin_bottom = 82.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 50 )
+custom_styles/hover = ExtResource( 48 )
+custom_styles/pressed = ExtResource( 48 )
+custom_styles/focus = ExtResource( 48 )
+custom_styles/disabled = ExtResource( 48 )
+custom_styles/normal = ExtResource( 48 )
+text = "Keluar"
+
+[node name="SuaraTombol" type="AudioStreamPlayer" parent="CanvasLayer/PopupKalah2/VBoxContainer"]
+stream = ExtResource( 40 )
+
+[node name="Tween" type="Tween" parent="CanvasLayer/PopupKalah2"]
+
+[node name="SuaraKalah" type="AudioStreamPlayer" parent="CanvasLayer/PopupKalah2"]
+stream = ExtResource( 41 )
+
+[node name="PopupMenu2" type="CenterContainer" parent="CanvasLayer"]
+pause_mode = 2
+margin_left = 96.0
+margin_top = -130.0
+margin_right = 224.0
+margin_bottom = -2.0
+script = ExtResource( 16 )
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PopupMenu2"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 49 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PopupMenu2"]
+margin_left = 16.0
+margin_top = 50.0
+margin_right = 111.0
+margin_bottom = 77.0
+
+[node name="TmblResume" type="Button" parent="CanvasLayer/PopupMenu2/HBoxContainer"]
+margin_right = 49.0
+margin_bottom = 27.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 50 )
+custom_styles/hover = ExtResource( 48 )
+custom_styles/pressed = ExtResource( 48 )
+custom_styles/focus = ExtResource( 48 )
+custom_styles/disabled = ExtResource( 48 )
+custom_styles/normal = ExtResource( 48 )
+text = " Resume "
+
+[node name="TmblRestart" type="Button" parent="CanvasLayer/PopupMenu2/HBoxContainer"]
+margin_left = 53.0
+margin_right = 95.0
+margin_bottom = 27.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 50 )
+custom_styles/hover = ExtResource( 48 )
+custom_styles/pressed = ExtResource( 48 )
+custom_styles/focus = ExtResource( 48 )
+custom_styles/disabled = ExtResource( 48 )
+custom_styles/normal = ExtResource( 48 )
+text = " Restart "
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PopupMenu2"]
+margin_left = 44.0
+margin_top = 21.0
+margin_right = 83.0
+margin_bottom = 106.0
+
+[node name="Label" type="Label" parent="CanvasLayer/PopupMenu2/VBoxContainer"]
+margin_right = 39.0
+margin_bottom = 54.0
+custom_fonts/font = SubResource( 120 )
+text = "Pause
+
+"
+align = 1
+
+[node name="TmblMenu" type="Button" parent="CanvasLayer/PopupMenu2/VBoxContainer"]
+margin_top = 58.0
+margin_right = 39.0
+margin_bottom = 85.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 50 )
+custom_styles/hover = ExtResource( 48 )
+custom_styles/pressed = ExtResource( 48 )
+custom_styles/focus = ExtResource( 48 )
+custom_styles/disabled = ExtResource( 48 )
+custom_styles/normal = ExtResource( 48 )
+text = " Menu "
+
+[node name="Tween" type="Tween" parent="CanvasLayer/PopupMenu2"]
+
+[node name="PopupMenang2" type="CenterContainer" parent="CanvasLayer"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -64.0
+margin_top = -250.0
+margin_right = 64.0
+margin_bottom = -122.0
+script = ExtResource( 22 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PopupMenang2"]
+margin_right = 128.0
+margin_bottom = 128.0
+texture = ExtResource( 49 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PopupMenang2"]
+margin_left = 23.0
+margin_top = 36.0
+margin_right = 105.0
+margin_bottom = 91.0
+custom_constants/separation = 8
+
+[node name="Label" type="Label" parent="CanvasLayer/PopupMenang2/VBoxContainer"]
+margin_right = 82.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 73 )
+text = "Hore Menang !"
+
+[node name="TmblSelanjutnya" type="Button" parent="CanvasLayer/PopupMenang2/VBoxContainer"]
+margin_top = 28.0
+margin_right = 82.0
+margin_bottom = 55.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 50 )
+custom_styles/hover = ExtResource( 48 )
+custom_styles/pressed = ExtResource( 48 )
+custom_styles/focus = ExtResource( 48 )
+custom_styles/disabled = ExtResource( 48 )
+custom_styles/normal = ExtResource( 48 )
+text = "Selanjutnya"
+
+[node name="SuaraTombol" type="AudioStreamPlayer" parent="CanvasLayer/PopupMenang2/VBoxContainer"]
+stream = ExtResource( 40 )
+
+[node name="Tween" type="Tween" parent="CanvasLayer/PopupMenang2"]
+
+[node name="SuaraMenang" type="AudioStreamPlayer" parent="CanvasLayer/PopupMenang2"]
+stream = ExtResource( 55 )
+
+[node name="TmblTouchscreen" parent="CanvasLayer" instance=ExtResource( 3 )]
+position = Vector2( 32, 210 )
+
+[node name="Frame_Per_Second" parent="CanvasLayer" instance=ExtResource( 54 )]
+margin_left = 8.0
+margin_top = 28.0
+margin_right = 48.0
+margin_bottom = 68.0
+
+[node name="Platform" type="RigidBody2D" parent="."]
+position = Vector2( 1837.15, 152 )
+collision_layer = 2
+collision_mask = 5
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="Platform"]
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 458761, 44, 0, 458762, 45, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform"]
+position = Vector2( 320, 230 )
+shape = SubResource( 125 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform"]
+autoplay = "gerak"
+anims/RESET = SubResource( 75 )
+anims/gerak = SubResource( 76 )
+
+[node name="Platform10" type="RigidBody2D" parent="."]
+position = Vector2( 2438, 95 )
+collision_layer = 2
+collision_mask = 5
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="Platform10"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 131072, 0, 0, 131073, 1, 0, 131074, 1, 0, 131075, 2, 0, 196608, 3, 0, 196609, 4, 0, 196610, 4, 0, 196611, 5, 0, 262144, 6, 0, 262145, 7, 0, 262146, 7, 0, 262147, 8, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform10"]
+position = Vector2( 64, 72.5 )
+shape = SubResource( 107 )
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform10"]
+autoplay = "gerak14"
+anims/RESET = SubResource( 110 )
+anims/gerak14 = SubResource( 111 )
+
+[node name="Platform4" type="RigidBody2D" parent="."]
+position = Vector2( 1601, 148.487 )
+collision_layer = 2
+collision_mask = 5
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="Platform4"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 65536, 46, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4"]
+position = Vector2( 16, 38 )
+shape = SubResource( 101 )
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform4"]
+autoplay = "gerak9"
+anims/RESET = SubResource( 102 )
+anims/gerak9 = SubResource( 103 )
+
+[node name="Platform5" type="RigidBody2D" parent="."]
+position = Vector2( 221, 338 )
+collision_layer = 2
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TerkenaBatuBesar" type="Area2D" parent="Platform5"]
+collision_layer = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform5/TerkenaBatuBesar"]
+position = Vector2( -142, 79.1 )
+shape = SubResource( 137 )
+
+[node name="TileMap" type="TileMap" parent="Platform5"]
+z_index = -1
+tile_set = ExtResource( 23 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -65543, 0, 0, -65542, 1, 0, -65541, 1, 0, -65540, 1, 0, -65539, 2, 0, -7, 3, 0, -6, 4, 0, -5, 4, 0, -4, 4, 0, -3, 5, 0, 65529, 3, 0, 65530, 4, 0, 65531, 4, 0, 65532, 4, 0, 65533, 5, 0, 131065, 3, 0, 131066, 4, 0, 131067, 4, 0, 131068, 4, 0, 131069, 5, 0, 196601, 6, 0, 196602, 7, 0, 196603, 7, 0, 196604, 7, 0, 196605, 8, 0 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Platform5"]
+autoplay = "gerak5"
+anims/RESET = SubResource( 89 )
+anims/gerak5 = SubResource( 90 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform5"]
+position = Vector2( -143, 16.5 )
+shape = SubResource( 88 )
+
+[node name="GerakKotak" type="Path2D" parent="."]
+position = Vector2( -108, 139 )
+scale = Vector2( 1.07875, 0.842402 )
+curve = SubResource( 77 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PathFollow2D" type="PathFollow2D" parent="GerakKotak"]
+position = Vector2( 1920.74, 134.14 )
+rotation = 2.34449
+rotate = false
+
+[node name="Platform2" type="RigidBody2D" parent="GerakKotak/PathFollow2D"]
+position = Vector2( -44.3655, 64.0004 )
+rotation = -2.34449
+scale = Vector2( 0.960207, 0.96141 )
+collision_layer = 2
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="GerakKotak/PathFollow2D/Platform2"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+collision_use_parent = true
+format = 1
+tile_data = PoolIntArray( 196607, 44, 0, 131072, 43, 0, 131073, 45, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GerakKotak/PathFollow2D/Platform2"]
+position = Vector2( 16.224, 70.9876 )
+shape = SubResource( 74 )
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GerakKotak"]
+autoplay = "gerak"
+anims/RESET = SubResource( 121 )
+anims/gerak = SubResource( 122 )
+
+[node name="GerakKotak2" type="Path2D" parent="."]
+position = Vector2( -1208, 10 )
+scale = Vector2( 1.07875, 0.842402 )
+curve = SubResource( 127 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="PathFollow2D" type="PathFollow2D" parent="GerakKotak2"]
+position = Vector2( 1861.67, 244.539 )
+rotation = 2.34449
+offset = 164.822
+rotate = false
+
+[node name="Platform2" type="RigidBody2D" parent="GerakKotak2/PathFollow2D"]
+position = Vector2( -44.3655, 64.0004 )
+rotation = -2.34449
+scale = Vector2( 0.960207, 0.96141 )
+collision_layer = 2
+mode = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="GerakKotak2/PathFollow2D/Platform2"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+collision_use_parent = true
+format = 1
+tile_data = PoolIntArray( 196607, 44, 0, 131072, 45, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GerakKotak2/PathFollow2D/Platform2"]
+position = Vector2( -0.225525, 68.9715 )
+shape = SubResource( 128 )
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="GerakKotak2"]
+autoplay = "gerak"
+anims/RESET = SubResource( 129 )
+anims/gerak = SubResource( 130 )
+
+[node name="Path2D2" type="Path2D" parent="."]
+position = Vector2( -548, 2 )
+scale = Vector2( 1, 0.984615 )
+curve = SubResource( 98 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D2"]
+position = Vector2( 849.926, 413.9 )
+rotation = 0.706849
+offset = 262.675
+rotate = false
+
+[node name="Platform3" type="RigidBody2D" parent="Path2D2/PathFollow2D"]
+position = Vector2( -53.7137, -37.8088 )
+rotation = -0.706849
+scale = Vector2( 1.03582, 0.822548 )
+collision_layer = 2
+mode = 3
+
+[node name="TileMap" type="TileMap" parent="Path2D2/PathFollow2D/Platform3"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 196607, 44, 0, 131072, 43, 0, 131073, 45, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D2/PathFollow2D/Platform3"]
+position = Vector2( 16.2093, 74.5169 )
+shape = SubResource( 131 )
+one_way_collision = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Path2D2"]
+autoplay = "gerak8"
+anims/RESET = SubResource( 99 )
+anims/gerak8 = SubResource( 100 )
+
+[node name="PalmKanan" type="Node2D" parent="."]
+
+[node name="PalmLurus" type="Node2D" parent="."]
+
+[node name="PalmKiri" type="Node2D" parent="."]
+
+[node name="KumpulanRumah" type="Node2D" parent="."]
+
+[node name="RumahPohon" parent="KumpulanRumah" instance=ExtResource( 10 )]
+position = Vector2( 231, 183 )
+z_index = -1
+
+[node name="RumahPohon2" parent="KumpulanRumah" instance=ExtResource( 10 )]
+position = Vector2( 1862, 346 )
+z_index = -1
+
+[node name="Rumah1" parent="KumpulanRumah" instance=ExtResource( 9 )]
+position = Vector2( 513, 149 )
+z_index = -1
+
+[node name="Rumah3" parent="KumpulanRumah" instance=ExtResource( 9 )]
+position = Vector2( 1130, 340 )
+z_index = -1
+
+[node name="Rumah2" parent="KumpulanRumah" instance=ExtResource( 12 )]
+position = Vector2( 390, 407 )
+z_index = -1
+
+[node name="Rumah4" parent="KumpulanRumah" instance=ExtResource( 12 )]
+position = Vector2( 1424, 407 )
+z_index = -1
+
+[node name="RumahKayu" parent="KumpulanRumah" instance=ExtResource( 13 )]
+position = Vector2( 992, 398 )
+z_index = -1
+
+[node name="RumahKayu2" parent="KumpulanRumah" instance=ExtResource( 13 )]
+position = Vector2( 2560, 398 )
+z_index = -1
+
+[node name="Batu" type="Node2D" parent="."]
+z_index = -2
+
+[node name="Rock-1" type="Sprite" parent="Batu"]
+position = Vector2( 380, 207 )
+texture = ExtResource( 11 )
+
+[node name="Rock-2" type="Sprite" parent="Batu"]
+position = Vector2( 510, 204 )
+texture = ExtResource( 11 )
+
+[node name="Rock-3" type="Sprite" parent="Batu"]
+position = Vector2( 417, 427 )
+texture = ExtResource( 11 )
+
+[node name="Rock-5" type="Sprite" parent="Batu"]
+position = Vector2( 879, 363 )
+texture = ExtResource( 11 )
+
+[node name="Rock-17" type="Sprite" parent="Batu"]
+position = Vector2( 706, 429 )
+texture = ExtResource( 11 )
+
+[node name="Rock-6" type="Sprite" parent="Batu"]
+position = Vector2( 1123, 142 )
+texture = ExtResource( 11 )
+
+[node name="Rock-13" type="Sprite" parent="Batu"]
+position = Vector2( 1466, 430 )
+texture = ExtResource( 11 )
+
+[node name="Rock-14" type="Sprite" parent="Batu"]
+position = Vector2( 1309, 428 )
+texture = ExtResource( 11 )
+
+[node name="Rock-7" type="Sprite" parent="Batu"]
+position = Vector2( 1537, 145 )
+texture = ExtResource( 11 )
+
+[node name="Rock-8" type="Sprite" parent="Batu"]
+position = Vector2( 1521, 266 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Rock-15" type="Sprite" parent="Batu"]
+position = Vector2( 1788, 396 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Rock-9" type="Sprite" parent="Batu"]
+position = Vector2( 2234, 402 )
+scale = Vector2( 0.900944, 0.834906 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Rock-11" type="Sprite" parent="Batu"]
+position = Vector2( 2753, 433 )
+scale = Vector2( 0.900944, 0.834906 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Rock-12" type="Sprite" parent="Batu"]
+position = Vector2( 2458, 431 )
+scale = Vector2( 0.900944, 0.834906 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Rock-10" type="Sprite" parent="Batu"]
+position = Vector2( 2107, 147 )
+scale = Vector2( 0.900944, 0.834906 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Rock-16" type="Sprite" parent="Batu"]
+position = Vector2( 1852, 175 )
+scale = Vector2( 0.900944, 0.834906 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Rock-4" type="Sprite" parent="Batu"]
+position = Vector2( 210, 399 )
+z_index = 1
+texture = ExtResource( 11 )
+
+[node name="Batu2" type="Node2D" parent="."]
+z_index = -2
+
+[node name="Pohon" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Pine" type="Sprite" parent="Pohon"]
+position = Vector2( 80, 113 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Pine2" type="Sprite" parent="Pohon"]
+position = Vector2( 794, 400 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Pine3" type="Sprite" parent="Pohon"]
+position = Vector2( 1290, 240 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Pine6" type="Sprite" parent="Pohon"]
+position = Vector2( 1630, 400 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Pine7" type="Sprite" parent="Pohon"]
+position = Vector2( 1796, 144 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Pine8" type="Sprite" parent="Pohon"]
+position = Vector2( 1933, 339 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Pine12" type="Sprite" parent="Pohon"]
+position = Vector2( 2230, 274 )
+scale = Vector2( 0.731707, 0.738462 )
+z_index = 1
+texture = ExtResource( 7 )
+
+[node name="Pine13" type="Sprite" parent="Pohon"]
+position = Vector2( 2666, 400 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Pine14" type="Sprite" parent="Pohon"]
+position = Vector2( 2710, 276 )
+scale = Vector2( 0.731707, 0.738462 )
+z_index = -1
+texture = ExtResource( 7 )
+
+[node name="Pine4" type="Sprite" parent="Pohon"]
+position = Vector2( 918, 112 )
+scale = Vector2( 0.731707, 0.738462 )
+texture = ExtResource( 7 )
+
+[node name="Tree" type="Sprite" parent="Pohon"]
+position = Vector2( 731, 202 )
+texture = ExtResource( 8 )
+
+[node name="Tree2" type="Sprite" parent="Pohon"]
+position = Vector2( 1484, 105 )
+texture = ExtResource( 8 )
+
+[node name="SuaraBackground" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 18 )
+autoplay = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Hero" parent="Node2D" instance=ExtResource( 2 )]
+position = Vector2( 63, 120 )
+
+[node name="Shop" parent="." instance=ExtResource( 14 )]
+position = Vector2( 902, 46 )
+z_index = -1
+
+[node name="StarShop" parent="." instance=ExtResource( 15 )]
+position = Vector2( 1094, 146 )
+
+[node name="Label" type="Label" parent="."]
+modulate = Color( 1, 1, 1, 0.705882 )
+margin_left = 149.0
+margin_top = 52.0
+margin_right = 244.0
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 135 )
+text = "Cari Peti dan Buka !!!"
+
+[node name="Tengkorak" type="Node2D" parent="."]
+
+[node name="01" type="Sprite" parent="Tengkorak"]
+position = Vector2( 210, 400 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="02" type="Sprite" parent="Tengkorak"]
+position = Vector2( 418, 431 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="11" type="Sprite" parent="Tengkorak"]
+position = Vector2( 381, 208 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="03" type="Sprite" parent="Tengkorak"]
+position = Vector2( 880, 365 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="12" type="Sprite" parent="Tengkorak"]
+position = Vector2( 707, 433 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="04" type="Sprite" parent="Tengkorak"]
+position = Vector2( 1466, 431 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="06" type="Sprite" parent="Tengkorak"]
+position = Vector2( 1788, 397 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="07" type="Sprite" parent="Tengkorak"]
+position = Vector2( 2108, 143 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="08" type="Sprite" parent="Tengkorak"]
+position = Vector2( 1853, 175 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="09" type="Sprite" parent="Tengkorak"]
+position = Vector2( 2235, 402 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="10" type="Sprite" parent="Tengkorak"]
+position = Vector2( 2458, 433 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="05" type="Sprite" parent="Tengkorak"]
+position = Vector2( 1310, 430 )
+z_index = -1
+texture = ExtResource( 52 )
+
+[node name="Peti" type="StaticBody2D" parent="."]
+position = Vector2( 193, 494 )
+z_index = -1
+script = ExtResource( 21 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="ZonaPeti2" type="Area2D" parent="Peti" groups=["GrupPeti"]]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Peti/ZonaPeti2"]
+position = Vector2( 1, 4.5 )
+z_index = 1
+shape = SubResource( 138 )
+
+[node name="BukaPeti" type="Sprite" parent="Peti"]
+visible = false
+texture = ExtResource( 25 )
+
+[node name="TutupPeti" type="Sprite" parent="Peti"]
+z_index = -1
+texture = ExtResource( 24 )
+
+[node name="Kunci" parent="." instance=ExtResource( 20 )]
+position = Vector2( 2736, 56 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SuaraKunci" type="AudioStreamPlayer" parent="Kunci"]
+stream = ExtResource( 26 )
+
+[node name="SuaraPetiTerbuka" type="AudioStreamPlayer" parent="Kunci"]
+stream = ExtResource( 34 )
+
+[node name="SuaraPeti" type="AudioStreamPlayer" parent="Kunci"]
+stream = ExtResource( 27 )
+
+[node name="GrupRamuan" type="Node2D" parent="."]
+
+[node name="RamuanDarah" parent="GrupRamuan" instance=ExtResource( 53 )]
+position = Vector2( 882, 321 )
+
+[node name="RamuanDarah2" parent="GrupRamuan" instance=ExtResource( 53 )]
+position = Vector2( 2756, 398 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 2458.0
+margin_top = 466.0
+margin_right = 2491.0
+margin_bottom = 485.0
+custom_fonts/font = SubResource( 139 )
+text = "< < <"
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 1837.0
+margin_top = 210.0
+margin_right = 1870.0
+margin_bottom = 229.0
+custom_fonts/font = SubResource( 139 )
+text = "> > >"
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 1091.0
+margin_top = 177.0
+margin_right = 1124.0
+margin_bottom = 196.0
+custom_fonts/font = SubResource( 139 )
+text = "> > >"
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 496.0
+margin_top = 244.0
+margin_right = 529.0
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 139 )
+text = "> > >"
+
+[node name="Label7" type="Label" parent="."]
+margin_left = 408.0
+margin_top = 466.0
+margin_right = 441.0
+margin_bottom = 485.0
+custom_fonts/font = SubResource( 139 )
+text = "< < <"
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 786.0
+margin_top = 466.0
+margin_right = 819.0
+margin_bottom = 485.0
+custom_fonts/font = SubResource( 139 )
+text = "< < <"
+
+[connection signal="body_entered" from="Zonajatuh" to="CanvasLayer/PopupKalah2" method="_on_Zonajatuh_body_entered"]
+[connection signal="pressed" from="CanvasLayer/PopupKalah2/VBoxContainer/TmblUlangi" to="CanvasLayer/PopupKalah2" method="_on_TmblUlangi_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupKalah2/VBoxContainer/TmblKeluar" to="CanvasLayer/PopupKalah2" method="_on_TmblKeluar_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupMenu2/HBoxContainer/TmblResume" to="CanvasLayer/PopupMenu2" method="_on_TmblResume_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupMenu2/HBoxContainer/TmblRestart" to="CanvasLayer/PopupMenu2" method="_on_TmblRestart_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupMenu2/VBoxContainer/TmblMenu" to="CanvasLayer/PopupMenu2" method="_on_TmblMenu_pressed"]
+[connection signal="pressed" from="CanvasLayer/PopupMenang2/VBoxContainer/TmblSelanjutnya" to="CanvasLayer/PopupMenang2" method="_on_TmblSelanjutnya_pressed"]
+[connection signal="body_entered" from="Platform5/TerkenaBatuBesar" to="Node2D/Hero" method="_on_TerkenaBatuBesar_body_entered"]
+[connection signal="hero_apdet_darah" from="Node2D/Hero" to="." method="_on_Hero_hero_apdet_darah"]
+[connection signal="hero_apdet_diamond" from="Node2D/Hero" to="." method="_on_Hero_hero_apdet_diamond"]
+[connection signal="hero_apdet_health" from="Node2D/Hero" to="." method="_on_Hero_hero_apdet_health"]
+[connection signal="hero_apdet_koin" from="Node2D/Hero" to="." method="_on_Hero_hero_apdet_koin"]
+[connection signal="hero_apdet_peti" from="Node2D/Hero" to="." method="_on_Hero_hero_apdet_peti"]
+[connection signal="hero_apdet_reddiamond" from="Node2D/Hero" to="." method="_on_Hero_hero_apdet_reddiamond"]
+[connection signal="hero_mati" from="Node2D/Hero" to="CanvasLayer/PopupKalah2" method="_on_Hero_hero_mati"]
+[connection signal="hero_menang" from="Node2D/Hero" to="CanvasLayer/PopupMenang2" method="_on_Hero_hero_menang"]
+[connection signal="body_entered" from="Peti/ZonaPeti2" to="Kunci" method="_on_ZonaPeti2_body_entered"]
+[connection signal="body_exited" from="Peti/ZonaPeti2" to="Kunci" method="_on_ZonaPeti2_body_exited"]
+[connection signal="peti_terbuka" from="Kunci" to="Peti" method="_on_Kunci_peti_terbuka"]
+[connection signal="body_entered" from="GrupRamuan/RamuanDarah" to="GrupRamuan/RamuanDarah" method="_on_RamuanDarah_body_entered"]
+[connection signal="body_entered" from="GrupRamuan/RamuanDarah2" to="GrupRamuan/RamuanDarah2" method="_on_RamuanDarah_body_entered"]
+
+[editable path="Kunci"]

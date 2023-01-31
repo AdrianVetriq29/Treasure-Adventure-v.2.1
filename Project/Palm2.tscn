@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://assets/Palm Tree Island/Back Palm Trees/Back Palm Tree Regular 02.png" type="Texture" id=1]
+[ext_resource path="res://assets/Palm Tree Island/Back Palm Trees/Back Palm Tree Regular 04.png" type="Texture" id=2]
+[ext_resource path="res://assets/Palm Tree Island/Back Palm Trees/Back Palm Tree Regular 03.png" type="Texture" id=3]
+[ext_resource path="res://assets/Palm Tree Island/Back Palm Trees/Back Palm Tree Regular 01.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Palm2",
+"speed": 10.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 16.5, 4 )
+
+[node name="Palm2" type="KinematicBody2D"]
+collision_layer = 2
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Palm2"
+frame = 2
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.5, -28 )
+shape = SubResource( 2 )
+disabled = true
+one_way_collision = true

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/556 Double Tap MP3.mp3-54bb9c6d4ba0f3cc9d9a93e2bad710b1.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Full Sound/5.56/MP3/556 Double Tap MP3.mp3"
+dest_files=[ "res://.import/556 Double Tap MP3.mp3-54bb9c6d4ba0f3cc9d9a93e2bad710b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,233 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://TombolPopup.tres" type="StyleBox" id=1]
+[ext_resource path="res://soundsandmusic/sounds/switch23.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/New Background/game_background_4/game_background_4.png" type="Texture" id=3]
+[ext_resource path="res://assets/Folks-Normal.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://TilesetPadat.tres" type="TileSet" id=5]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 04.png" type="Texture" id=6]
+[ext_resource path="res://assets/Palm Tree Island/Background/Big Clouds.png" type="Texture" id=7]
+[ext_resource path="res://assets/Palm Tree Island/Background/Additional Sky.png" type="Texture" id=8]
+[ext_resource path="res://BoxLevel2.gd" type="Script" id=9]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 02.png" type="Texture" id=10]
+[ext_resource path="res://soundsandmusic/music/Bittersweet Anthem.mp3" type="AudioStream" id=11]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 03.png" type="Texture" id=12]
+[ext_resource path="res://assets/Wood and Paper UI/Prefabs/9.png" type="Texture" id=13]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 03.png" type="Texture" id=14]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 06.png" type="Texture" id=15]
+[ext_resource path="res://assets/Wood and Paper UI/arrow_return_icon_175872.png" type="Texture" id=16]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 07.png" type="Texture" id=17]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 05.png" type="Texture" id=18]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 08.png" type="Texture" id=19]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Ship Helm/Ship Helm Idle 01.png" type="Texture" id=20]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 04.png" type="Texture" id=21]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 06.png" type="Texture" id=22]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 09.png" type="Texture" id=23]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 02.png" type="Texture" id=24]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 08.png" type="Texture" id=25]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 01.png" type="Texture" id=26]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 07.png" type="Texture" id=27]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 09.png" type="Texture" id=28]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 10.png" type="Texture" id=29]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 01.png" type="Texture" id=30]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Open 05.png" type="Texture" id=31]
+[ext_resource path="res://assets/Palm Tree Island/Objects/Chest/Chest Close 10.png" type="Texture" id=32]
+
+[sub_resource type="DynamicFont" id=1]
+outline_color = Color( 0.980392, 1, 0, 1 )
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 13
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 8
+font_data = ExtResource( 4 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ ExtResource( 30 ), ExtResource( 24 ), ExtResource( 12 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 22 ), ExtResource( 27 ), ExtResource( 25 ), ExtResource( 23 ), ExtResource( 32 ), ExtResource( 26 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 6 ), ExtResource( 31 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 19 ), ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="BoxLevel2" type="Node2D"]
+z_index = -1
+script = ExtResource( 9 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 32, 32 )
+collision_layer = 2
+collision_mask = 4
+format = 1
+tile_data = PoolIntArray( -1, 4, 0, -65536, 4, 0, -65535, 4, 0, -65534, 4, 0, -65533, 4, 0, -65532, 4, 0, -65531, 4, 0, -65530, 4, 0, -65529, 4, 0, -65528, 4, 0, -65527, 4, 0, -65526, 4, 0, -65525, 4, 0, 65535, 4, 0, 0, 12, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 9, 13, 0, 10, 4, 0, 11, 4, 0, 131071, 4, 0, 65536, 5, 0, 65545, 3, 0, 65546, 4, 0, 65547, 4, 0, 196607, 4, 0, 131072, 5, 0, 131081, 3, 0, 131082, 4, 0, 131083, 4, 0, 262143, 4, 0, 196608, 5, 0, 196617, 3, 0, 196618, 4, 0, 196619, 4, 0, 327679, 4, 0, 262144, 5, 0, 262153, 3, 0, 262154, 4, 0, 262155, 4, 0, 393215, 4, 0, 327680, 5, 0, 327689, 3, 0, 327690, 4, 0, 327691, 4, 0, 458751, 4, 0, 393216, 5, 0, 393225, 3, 0, 393226, 4, 0, 393227, 4, 0, 524287, 4, 0, 458752, 14, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 15, 0, 458762, 4, 0, 458763, 4, 0 )
+
+[node name="BgImage" type="Sprite" parent="."]
+position = Vector2( 161.5, 120.25 )
+scale = Vector2( 0.168229, 0.222685 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="AdditionalSky" type="Sprite" parent="."]
+visible = false
+position = Vector2( 191, 56.5 )
+scale = Vector2( 11.9375, 3.53125 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="BigClouds" type="Sprite" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.580392 )
+position = Vector2( 229, 98 )
+z_index = -1
+texture = ExtResource( 7 )
+
+[node name="SuaraTitle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -3.0
+autoplay = true
+
+[node name="levels" type="Control" parent="."]
+margin_left = -15.0
+margin_top = 15.0
+margin_right = 25.0
+margin_bottom = 55.0
+
+[node name="Sprite" type="Sprite" parent="levels"]
+modulate = Color( 1, 1, 1, 0.941176 )
+position = Vector2( 179, 109 )
+scale = Vector2( 2, 1.5 )
+texture = ExtResource( 13 )
+
+[node name="1" type="Button" parent="levels"]
+margin_left = 98.0
+margin_top = 74.0
+margin_right = 166.0
+margin_bottom = 105.0
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/disabled = ExtResource( 1 )
+custom_styles/normal = ExtResource( 1 )
+text = "   "
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label" type="Label" parent="levels/1"]
+margin_left = 15.0
+margin_top = 6.0
+margin_right = 55.0
+margin_bottom = 21.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Level 1"
+
+[node name="2" type="Button" parent="levels"]
+margin_left = 98.0
+margin_top = 108.0
+margin_right = 165.0
+margin_bottom = 139.0
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/disabled = ExtResource( 1 )
+custom_styles/normal = ExtResource( 1 )
+text = "    "
+
+[node name="Label2" type="Label" parent="levels/2"]
+margin_left = 15.0
+margin_top = 6.0
+margin_right = 56.0
+margin_bottom = 21.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Level 2"
+
+[node name="3" type="Button" parent="levels"]
+margin_left = 98.0
+margin_top = 142.0
+margin_right = 165.0
+margin_bottom = 173.0
+custom_fonts/font = SubResource( 1 )
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/disabled = ExtResource( 1 )
+custom_styles/normal = ExtResource( 1 )
+text = "    "
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Label3" type="Label" parent="levels/3"]
+margin_left = 15.0
+margin_top = 6.0
+margin_right = 56.0
+margin_bottom = 21.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Level 3"
+
+[node name="Label" type="Label" parent="levels"]
+margin_left = 87.0
+margin_top = 44.0
+margin_right = 150.0
+margin_bottom = 63.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Pilih Level"
+
+[node name="Back" type="Button" parent="levels"]
+margin_left = 305.0
+margin_top = -8.0
+margin_right = 328.0
+margin_bottom = 14.0
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/disabled = ExtResource( 1 )
+custom_styles/normal = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="levels/Back"]
+position = Vector2( 11, 10 )
+scale = Vector2( 0.04, 0.04 )
+texture = ExtResource( 16 )
+
+[node name="Tips" type="Label" parent="levels"]
+margin_left = 184.0
+margin_top = 85.0
+margin_right = 264.0
+margin_bottom = 95.0
+custom_fonts/font = SubResource( 4 )
+text = "Buka Peti dan Menang !!!"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="levels/Tips"]
+position = Vector2( 40, 33 )
+frames = SubResource( 5 )
+frame = 19
+playing = true
+
+[node name="SuaraTombol" type="AudioStreamPlayer" parent="levels"]
+stream = ExtResource( 2 )
+
+[node name="ShipHelmIdle01" type="Sprite" parent="."]
+position = Vector2( 245, 69 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 20 )
+
+[connection signal="pressed" from="levels/1" to="." method="_on_1_pressed"]
+[connection signal="pressed" from="levels/2" to="." method="_on_2_pressed"]
+[connection signal="pressed" from="levels/3" to="." method="_on_3_pressed"]
+[connection signal="pressed" from="levels/Back" to="." method="_on_Back_pressed"]

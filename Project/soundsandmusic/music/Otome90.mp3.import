@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Otome90.mp3-aa92e3d0ca444547836691b1ea2cb45e.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/music/Otome90.mp3"
+dest_files=[ "res://.import/Otome90.mp3-aa92e3d0ca444547836691b1ea2cb45e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

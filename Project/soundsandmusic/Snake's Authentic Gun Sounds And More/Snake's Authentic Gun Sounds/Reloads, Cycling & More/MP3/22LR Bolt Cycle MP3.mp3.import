@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/22LR Bolt Cycle MP3.mp3-425da3274b56818df4038d14e7a759a4.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/22LR Bolt Cycle MP3.mp3"
+dest_files=[ "res://.import/22LR Bolt Cycle MP3.mp3-425da3274b56818df4038d14e7a759a4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

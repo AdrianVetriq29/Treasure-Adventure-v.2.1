@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/oof-97698.mp3-fb58b76c7b33af9812e1ebfc789b58b3.mp3str"
+
+[deps]
+
+source_file="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/oof-97698.mp3"
+dest_files=[ "res://.import/oof-97698.mp3-fb58b76c7b33af9812e1ebfc789b58b3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Hero.gd" type="Script" id=1]
+[ext_resource path="res://HeroTanpaPedang.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/ceeQbnjx.ogg" type="AudioStream" id=3]
+[ext_resource path="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/oof-97698.mp3" type="AudioStream" id=4]
+[ext_resource path="res://soundsandmusic/sounds/confirmation_002.ogg" type="AudioStream" id=5]
+[ext_resource path="res://soundsandmusic/sounds/jump1.ogg" type="AudioStream" id=6]
+[ext_resource path="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/clean-fast-swooshaiff-14784.mp3" type="AudioStream" id=7]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 8, 10 )
+
+[node name="Hero" type="KinematicBody2D"]
+collision_mask = 6
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = ExtResource( 2 )
+animation = "Diam"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 2 )
+shape = SubResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = 0
+limit_top = 0
+limit_right = 2810
+limit_bottom = 510
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+drag_margin_left = 0.3
+drag_margin_top = 0.4
+drag_margin_right = 0.3
+drag_margin_bottom = 0.4
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true
+
+[node name="SuaraKoin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -5.0
+
+[node name="SuaraDiamond" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -5.0
+
+[node name="SuaraRedDiamond" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -5.0
+
+[node name="SuaraLompat" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -12.0
+
+[node name="SuaraTerluka" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -5.0
+
+[node name="SuaraPedang" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -3.0
+
+[node name="WeaponContainer" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="WeaponContainer"]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

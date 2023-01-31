@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bittersweet Anthem.mp3-95892828bf5f127e161a956e51ecc372.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/music/Bittersweet Anthem.mp3"
+dest_files=[ "res://.import/Bittersweet Anthem.mp3-95892828bf5f127e161a956e51ecc372.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

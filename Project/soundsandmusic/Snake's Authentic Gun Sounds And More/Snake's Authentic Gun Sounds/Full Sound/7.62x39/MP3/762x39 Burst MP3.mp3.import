@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/762x39 Burst MP3.mp3-3f7e4b800352df0909d0320b182e8b8c.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Full Sound/7.62x39/MP3/762x39 Burst MP3.mp3"
+dest_files=[ "res://.import/762x39 Burst MP3.mp3-3f7e4b800352df0909d0320b182e8b8c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/success-fanfare-trumpets-6185.mp3-5936590ef20f1f49a6d83262cd16e39a.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/sounds/success-fanfare-trumpets-6185.mp3"
+dest_files=[ "res://.import/success-fanfare-trumpets-6185.mp3-5936590ef20f1f49a6d83262cd16e39a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

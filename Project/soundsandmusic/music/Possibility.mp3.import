@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Possibility.mp3-bd259bc1915c74588abcc8eeb2c9d554.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/music/Possibility.mp3"
+dest_files=[ "res://.import/Possibility.mp3-bd259bc1915c74588abcc8eeb2c9d554.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

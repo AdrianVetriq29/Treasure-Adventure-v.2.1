@@ -1,0 +1,168 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://TilesetPadat.tres" type="TileSet" id=1]
+[ext_resource path="res://TombolFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/Folks-Normal.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://TombolPopup.tres" type="StyleBox" id=4]
+[ext_resource path="res://assets/Palm Tree Island/Background/Additional Sky.png" type="Texture" id=5]
+[ext_resource path="res://assets/Palm Tree Island/Background/Big Clouds.png" type="Texture" id=6]
+[ext_resource path="res://assets/Palm Tree Island/Background/BG Image.png" type="Texture" id=7]
+[ext_resource path="res://Musuh.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/Wood and Paper UI/Prefabs/8.png" type="Texture" id=9]
+[ext_resource path="res://VBoxContainer.gd" type="Script" id=10]
+[ext_resource path="res://Palm3.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Palm2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://soundsandmusic/sounds/switch23.ogg" type="AudioStream" id=13]
+[ext_resource path="res://soundsandmusic/music/Swinging Pants.ogg" type="AudioStream" id=14]
+[ext_resource path="res://assets/Wood and Paper UI/3706880-control-fix-gear-option-setting_108710.png" type="Texture" id=15]
+[ext_resource path="res://Frame_Per_Second.tscn" type="PackedScene" id=16]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 9 )
+region_rect = Rect2( 0, 0, 96, 96 )
+margin_left = 16.0
+margin_right = 16.0
+margin_top = 18.0
+margin_bottom = 18.0
+
+[sub_resource type="DynamicFont" id=2]
+size = 14
+font_data = ExtResource( 3 )
+
+[node name="Title" type="Node2D"]
+z_index = -1
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+collision_layer = 2
+collision_mask = 4
+format = 1
+tile_data = PoolIntArray( -1, 4, 0, -65536, 4, 0, -65535, 4, 0, -65534, 4, 0, -65533, 4, 0, -65532, 4, 0, -65531, 4, 0, -65530, 4, 0, -65529, 4, 0, -65528, 4, 0, -65527, 4, 0, -65526, 4, 0, -65525, 4, 0, 65535, 4, 0, 0, 12, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 8, 0, 131071, 4, 0, 65536, 5, 0, 196607, 4, 0, 131072, 5, 0, 262143, 4, 0, 196608, 5, 0, 196614, 44, 0, 196615, 43, 0, 196616, 45, 0, 327679, 4, 0, 262144, 5, 0, 393215, 4, 0, 327680, 5, 0, 327688, 0, 0, 327689, 1, 0, 327690, 1, 0, 327691, 1, 0, 458751, 4, 0, 393216, 5, 0, 393224, 3, 0, 393225, 4, 0, 393226, 4, 0, 393227, 4, 0, 524287, 4, 0, 458752, 14, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 15, 0, 458761, 4, 0, 458762, 4, 0, 458763, 4, 0 )
+
+[node name="BgImage" type="Sprite" parent="."]
+position = Vector2( 190, 177 )
+z_index = -1
+texture = ExtResource( 7 )
+
+[node name="AdditionalSky" type="Sprite" parent="."]
+position = Vector2( 191, 56.5 )
+scale = Vector2( 11.9375, 3.53125 )
+z_index = -1
+texture = ExtResource( 5 )
+
+[node name="BigClouds" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.580392 )
+position = Vector2( 229, 98 )
+z_index = -1
+texture = ExtResource( 6 )
+
+[node name="Musuh" parent="." instance=ExtResource( 8 )]
+position = Vector2( 223, 81 )
+arah = -1
+
+[node name="LogoSetting" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
+position = Vector2( 297, 17 )
+scale = Vector2( 0.04, 0.04 )
+texture = ExtResource( 15 )
+
+[node name="Button" type="Button" parent="LogoSetting"]
+margin_left = -175.0
+margin_top = -175.0
+margin_right = 175.0
+margin_bottom = 175.0
+flat = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+margin_left = 70.0
+margin_top = 118.0
+margin_right = 125.0
+margin_bottom = 192.0
+script = ExtResource( 10 )
+
+[node name="TombolMulai" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_right = 55.0
+margin_bottom = 27.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/disabled = ExtResource( 4 )
+custom_styles/normal = ExtResource( 4 )
+text = "Mulai"
+
+[node name="TombolTentang" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 31.0
+margin_right = 55.0
+margin_bottom = 58.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/disabled = ExtResource( 4 )
+custom_styles/normal = ExtResource( 4 )
+text = "Tentang"
+
+[node name="TombolQuit" type="Button" parent="CanvasLayer/VBoxContainer"]
+margin_top = 62.0
+margin_right = 55.0
+margin_bottom = 89.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 2 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/disabled = ExtResource( 4 )
+custom_styles/normal = ExtResource( 4 )
+text = "Quit"
+
+[node name="SuaraTombol" type="AudioStreamPlayer" parent="CanvasLayer/VBoxContainer"]
+stream = ExtResource( 13 )
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+margin_left = 41.0
+margin_top = 55.0
+margin_right = 160.0
+margin_bottom = 117.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+margin_left = 25.0
+margin_top = 10.0
+margin_right = 92.0
+margin_bottom = 51.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Treasure
+Adventure"
+align = 1
+valign = 1
+
+[node name="Palm3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 189, 89 )
+z_index = -1
+
+[node name="Palm2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 154, 198 )
+z_index = -1
+
+[node name="SuaraTitle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -3.0
+autoplay = true
+
+[node name="Frame_Per_Second" parent="." instance=ExtResource( 16 )]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 48.0
+margin_bottom = 48.0
+
+[connection signal="pressed" from="LogoSetting/Button" to="CanvasLayer/VBoxContainer" method="_on_Button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/TombolMulai" to="CanvasLayer/VBoxContainer" method="_on_TombolMulai_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/TombolTentang" to="CanvasLayer/VBoxContainer" method="_on_TombolTentang_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/TombolQuit" to="CanvasLayer/VBoxContainer" method="_on_TombolQuit_pressed"]

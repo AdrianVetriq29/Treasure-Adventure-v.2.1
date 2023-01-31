@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Again.mp3-3550f7d8126c5cd414b141a3ff60a913.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/music/Again.mp3"
+dest_files=[ "res://.import/Again.mp3-3550f7d8126c5cd414b141a3ff60a913.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

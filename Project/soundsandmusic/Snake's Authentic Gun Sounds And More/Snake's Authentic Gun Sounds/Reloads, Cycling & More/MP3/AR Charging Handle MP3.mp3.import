@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AR Charging Handle MP3.mp3-34f06b532ced2547e5f185eb03f37ff6.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/AR Charging Handle MP3.mp3"
+dest_files=[ "res://.import/AR Charging Handle MP3.mp3-34f06b532ced2547e5f185eb03f37ff6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

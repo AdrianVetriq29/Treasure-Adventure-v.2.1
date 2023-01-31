@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AK Reload Part 2 MP3.mp3-c2ba31e5ae6f9449595f810a5309887c.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/AK Reload Part 2 MP3.mp3"
+dest_files=[ "res://.import/AK Reload Part 2 MP3.mp3-c2ba31e5ae6f9449595f810a5309887c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

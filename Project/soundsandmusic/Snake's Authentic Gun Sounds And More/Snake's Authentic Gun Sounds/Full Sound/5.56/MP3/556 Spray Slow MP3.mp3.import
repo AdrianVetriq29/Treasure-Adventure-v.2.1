@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/556 Spray Slow MP3.mp3-a1cff433d3569dd491a2a62e7a3fd801.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Full Sound/5.56/MP3/556 Spray Slow MP3.mp3"
+dest_files=[ "res://.import/556 Spray Slow MP3.mp3-a1cff433d3569dd491a2a62e7a3fd801.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

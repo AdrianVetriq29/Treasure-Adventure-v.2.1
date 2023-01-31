@@ -1,0 +1,186 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://TombolPopup.tres" type="StyleBox" id=1]
+[ext_resource path="res://soundsandmusic/sounds/switch23.ogg" type="AudioStream" id=2]
+[ext_resource path="res://assets/New Background/game_background_2/game_background_2.png" type="Texture" id=3]
+[ext_resource path="res://assets/Folks-Normal.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://TilesetPadat.tres" type="TileSet" id=5]
+[ext_resource path="res://assets/Wood and Paper UI/Mobile Buttons/Mobile Buttons/6.png" type="Texture" id=6]
+[ext_resource path="res://assets/Palm Tree Island/Background/Big Clouds.png" type="Texture" id=7]
+[ext_resource path="res://assets/Palm Tree Island/Background/Additional Sky.png" type="Texture" id=8]
+[ext_resource path="res://Pengaturan.gd" type="Script" id=9]
+[ext_resource path="res://assets/Wood and Paper UI/Mobile Buttons/Mobile Buttons/5.png" type="Texture" id=10]
+[ext_resource path="res://soundsandmusic/music/Swinging Pants.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/Wood and Paper UI/Mobile Buttons/Mobile Buttons/4.png" type="Texture" id=12]
+[ext_resource path="res://assets/Wood and Paper UI/Prefabs/9.png" type="Texture" id=13]
+[ext_resource path="res://assets/Wood and Paper UI/Mobile Buttons/Mobile Buttons/3.png" type="Texture" id=14]
+[ext_resource path="res://assets/Wood and Paper UI/Mobile Buttons/Mobile Buttons/2.png" type="Texture" id=15]
+[ext_resource path="res://assets/Wood and Paper UI/arrow_return_icon_175872.png" type="Texture" id=16]
+[ext_resource path="res://Frame_Per_Second.tscn" type="PackedScene" id=17]
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 4 )
+
+[node name="Pengaturan" type="Node2D"]
+z_index = -1
+script = ExtResource( 9 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 32, 32 )
+collision_layer = 2
+collision_mask = 4
+format = 1
+tile_data = PoolIntArray( -1, 12, 0, -65536, 7, 0, -65535, 7, 0, -65534, 7, 0, -65533, 7, 0, -65532, 7, 0, -65531, 7, 0, -65530, 7, 0, -65529, 7, 0, -65528, 7, 0, -65527, 7, 0, -65526, 13, 0, -65525, 4, 0, 65535, 5, 0, 10, 3, 0, 11, 4, 0, 131071, 5, 0, 65546, 3, 0, 65547, 4, 0, 196607, 5, 0, 131082, 3, 0, 131083, 4, 0, 262143, 5, 0, 196618, 3, 0, 196619, 4, 0, 327679, 5, 0, 262154, 3, 0, 262155, 4, 0, 393215, 5, 0, 327690, 3, 0, 327691, 4, 0, 458751, 5, 0, 393226, 3, 0, 393227, 4, 0, 524287, 14, 0, 458752, 1, 0, 458753, 1, 0, 458754, 1, 0, 458755, 1, 0, 458756, 1, 0, 458757, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458762, 15, 0, 458763, 4, 0 )
+
+[node name="BgImage" type="Sprite" parent="."]
+position = Vector2( 161.5, 120.25 )
+scale = Vector2( 0.168229, 0.222685 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="AdditionalSky" type="Sprite" parent="."]
+visible = false
+position = Vector2( 191, 56.5 )
+scale = Vector2( 11.9375, 3.53125 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="BigClouds" type="Sprite" parent="."]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.580392 )
+position = Vector2( 229, 98 )
+z_index = -1
+texture = ExtResource( 7 )
+
+[node name="SuaraTitle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
+volume_db = -3.0
+autoplay = true
+
+[node name="Control" type="Control" parent="."]
+margin_left = 27.0
+margin_top = 1.0
+margin_right = 67.0
+margin_bottom = 41.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Control"]
+modulate = Color( 1, 1, 1, 0.941176 )
+position = Vector2( 131, 114 )
+scale = Vector2( 1.5, 2 )
+texture = ExtResource( 13 )
+
+[node name="Label" type="Label" parent="Control"]
+margin_left = 62.0
+margin_top = 24.0
+margin_right = 107.0
+margin_bottom = 43.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Kontrol"
+
+[node name="SuaraTombol" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource( 2 )
+
+[node name="Maju" type="Sprite" parent="Control"]
+position = Vector2( 84, 66 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 12 )
+
+[node name="Label" type="Label" parent="Control/Maju"]
+margin_left = 28.75
+margin_top = -8.75001
+margin_right = 113.75
+margin_bottom = 10.25
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Gerak Kanan"
+
+[node name="Mundur" type="Sprite" parent="Control"]
+position = Vector2( 84, 96 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 14 )
+
+[node name="Label2" type="Label" parent="Control/Mundur"]
+margin_left = 28.75
+margin_top = -10.0
+margin_right = 113.75
+margin_bottom = 8.99998
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Gerak Kiri"
+
+[node name="Loncat" type="Sprite" parent="Control"]
+position = Vector2( 84, 126 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 15 )
+
+[node name="Label3" type="Label" parent="Control/Loncat"]
+margin_left = 28.75
+margin_top = -8.75
+margin_right = 113.75
+margin_bottom = 10.25
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Melompat"
+
+[node name="Lari" type="Sprite" parent="Control"]
+position = Vector2( 84, 156 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 6 )
+
+[node name="Label4" type="Label" parent="Control/Lari"]
+margin_left = 29.0
+margin_top = -8.75002
+margin_right = 71.0
+margin_bottom = 10.25
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Berlari"
+
+[node name="Serang" type="Sprite" parent="Control"]
+position = Vector2( 84, 186 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 10 )
+
+[node name="Label5" type="Label" parent="Control/Serang"]
+margin_left = 28.75
+margin_top = -8.75002
+margin_right = 113.75
+margin_bottom = 10.25
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Serang/Tembak"
+
+[node name="Back" type="Button" parent="."]
+margin_left = 288.0
+margin_top = 6.0
+margin_right = 311.0
+margin_bottom = 28.0
+custom_styles/hover = ExtResource( 1 )
+custom_styles/pressed = ExtResource( 1 )
+custom_styles/focus = ExtResource( 1 )
+custom_styles/disabled = ExtResource( 1 )
+custom_styles/normal = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Back"]
+position = Vector2( 11, 10 )
+scale = Vector2( 0.04, 0.04 )
+texture = ExtResource( 16 )
+
+[node name="Frame_Per_Second" parent="." instance=ExtResource( 17 )]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 48.0
+margin_bottom = 48.0
+
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]

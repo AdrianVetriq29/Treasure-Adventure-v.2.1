@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lever Cycle MP3.mp3-19760d6947542b9227e3cd6bf28ad045.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/Lever Cycle MP3.mp3"
+dest_files=[ "res://.import/Lever Cycle MP3.mp3-19760d6947542b9227e3cd6bf28ad045.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

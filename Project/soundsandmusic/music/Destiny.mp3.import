@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Destiny.mp3-aa5d849f66adbbe73e9ac132af62446a.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/music/Destiny.mp3"
+dest_files=[ "res://.import/Destiny.mp3-aa5d849f66adbbe73e9ac132af62446a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

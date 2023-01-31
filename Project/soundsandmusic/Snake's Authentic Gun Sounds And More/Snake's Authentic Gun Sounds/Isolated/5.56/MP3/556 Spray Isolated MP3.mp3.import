@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/556 Spray Isolated MP3.mp3-d59be5c9c08446b652a95aa1955ec19e.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Isolated/5.56/MP3/556 Spray Isolated MP3.mp3"
+dest_files=[ "res://.import/556 Spray Isolated MP3.mp3-d59be5c9c08446b652a95aa1955ec19e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,47 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://TilesetPadat.tres" type="TileSet" id=1]
+[ext_resource path="res://assets/Palm Tree Island/Background/Big Clouds.png" type="Texture" id=2]
+[ext_resource path="res://assets/Palm Tree Island/Background/BG Image.png" type="Texture" id=3]
+[ext_resource path="res://Pedang.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Hero_baru.tscn" type="PackedScene" id=5]
+[ext_resource path="res://LevelPedang.gd" type="Script" id=6]
+
+[node name="LevelPedang" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="Peta" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 0, 12, 0, 1, 7, 0, 2, 7, 0, 3, 7, 0, 4, 7, 0, 5, 7, 0, 6, 7, 0, 7, 7, 0, 8, 7, 0, 9, 7, 0, 65536, 5, 0, 131072, 5, 0, 196608, 5, 0, 262144, 14, 0, 262145, 1, 0, 262146, 1, 0, 262147, 1, 0, 262148, 1, 0, 262149, 1, 0, 262150, 1, 0, 262151, 1, 0, 262152, 1, 0, 262153, 1, 0, 327680, 4, 0, 327681, 4, 0, 327682, 4, 0, 327683, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 393216, 4, 0, 393217, 4, 0, 393218, 4, 0, 393219, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 458752, 4, 0, 458753, 4, 0, 458754, 4, 0, 458755, 4, 0, 458756, 4, 0, 458757, 4, 0, 458758, 4, 0, 458759, 4, 0, 458760, 4, 0, 458761, 4, 0 )
+
+[node name="BgImage" type="Sprite" parent="."]
+position = Vector2( 159.5, 91 )
+scale = Vector2( 0.835938, 1 )
+z_index = -1
+texture = ExtResource( 3 )
+
+[node name="BigClouds" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.705882 )
+position = Vector2( 254, 60 )
+z_index = -1
+texture = ExtResource( 2 )
+
+[node name="Hero" parent="." instance=ExtResource( 5 )]
+position = Vector2( 94, 112 )
+
+[node name="Camera2D" parent="Hero" index="2"]
+limit_right = 320
+limit_bottom = 240
+
+[node name="Pedang" parent="." instance=ExtResource( 4 )]
+position = Vector2( 228, 116 )
+
+[node name="AnimatedSprite" parent="Pedang" index="1"]
+frame = 4
+
+[connection signal="body_entered" from="Pedang" to="." method="_on_Pedang_body_entered"]
+
+[editable path="Hero"]
+[editable path="Pedang"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/762x39 Spray MP3.mp3-319b7e5d9d8d3c9ec9141f836f062946.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Full Sound/7.62x39/MP3/762x39 Spray MP3.mp3"
+dest_files=[ "res://.import/762x39 Spray MP3.mp3-319b7e5d9d8d3c9ec9141f836f062946.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

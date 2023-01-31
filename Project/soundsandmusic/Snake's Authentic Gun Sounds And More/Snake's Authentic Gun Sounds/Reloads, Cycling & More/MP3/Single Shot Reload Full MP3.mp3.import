@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Single Shot Reload Full MP3.mp3-19f0d7bad5bb9c512b0d9b6198cfed3b.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/Single Shot Reload Full MP3.mp3"
+dest_files=[ "res://.import/Single Shot Reload Full MP3.mp3-19f0d7bad5bb9c512b0d9b6198cfed3b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

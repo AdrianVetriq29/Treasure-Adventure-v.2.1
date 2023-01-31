@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AR Reload Part 1 MP3.mp3-74c7fa9dde04f2070b96e777575f26c5.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/AR Reload Part 1 MP3.mp3"
+dest_files=[ "res://.import/AR Reload Part 1 MP3.mp3-74c7fa9dde04f2070b96e777575f26c5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

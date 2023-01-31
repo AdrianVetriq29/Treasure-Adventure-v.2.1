@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/clean-fast-swooshaiff-14784.mp3-545e5652d2f65bf49c87b4e30bf7cc0c.mp3str"
+
+[deps]
+
+source_file="res://sunyland/sunny-land-phaser-project/sunny-land/assets/sound/clean-fast-swooshaiff-14784.mp3"
+dest_files=[ "res://.import/clean-fast-swooshaiff-14784.mp3-545e5652d2f65bf49c87b4e30bf7cc0c.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

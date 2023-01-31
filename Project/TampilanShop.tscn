@@ -1,0 +1,377 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://TombolFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/Folks-Normal.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/Weapon/AK47.png" type="Texture" id=3]
+[ext_resource path="res://assets/Weapon/P12.png" type="Texture" id=4]
+[ext_resource path="res://assets/Captain Clown Nose/Captain Clown Nose/Sword/21-Sword Idle/Sword Idle 01.png" type="Texture" id=5]
+[ext_resource path="res://assets/Pirate Treasure/Gold Coin/01.png" type="Texture" id=6]
+[ext_resource path="res://assets/Pirate Treasure/Blue Diamond/03.png" type="Texture" id=7]
+[ext_resource path="res://assets/Pirate Treasure/Red Diamond/01.png" type="Texture" id=8]
+[ext_resource path="res://TampilanShop.gd" type="Script" id=9]
+[ext_resource path="res://assets/Pirate Treasure/Red Potion/01.png" type="Texture" id=10]
+[ext_resource path="res://TombolPopup.tres" type="StyleBox" id=11]
+[ext_resource path="res://assets/Wood and Paper UI/Prefabs/3.png" type="Texture" id=12]
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 500 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "TransOut"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 0, 500 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "Transin"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -300 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="DynamicFont" id=1]
+size = 10
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 10
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 12
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 10
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 10
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 10
+font_data = ExtResource( 2 )
+
+[node name="TampilanShop" type="CanvasLayer"]
+pause_mode = 2
+layer = 2
+offset = Vector2( 0, 500 )
+transform = Transform2D( 1, 0, 0, 1, 0, 500 )
+script = ExtResource( 9 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 7 )
+anims/TransOut = SubResource( 8 )
+anims/Transin = SubResource( 9 )
+
+[node name="Panel" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_right = 320.0
+margin_bottom = 240.0
+
+[node name="ColorRect" type="Sprite" parent="Panel"]
+position = Vector2( 159, 118 )
+scale = Vector2( 2.5, 2 )
+texture = ExtResource( 12 )
+
+[node name="ColorRect2" type="ColorRect" parent="Panel"]
+margin_top = -2.0
+margin_right = 320.0
+margin_bottom = 31.0
+color = Color( 0, 0, 0, 0 )
+
+[node name="Title" type="Label" parent="Panel/ColorRect2"]
+margin_left = 120.0
+margin_top = 17.0
+margin_right = 215.0
+margin_bottom = 36.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "PIRATE STORE"
+align = 1
+
+[node name="Back" type="Button" parent="Panel/ColorRect2"]
+margin_left = 263.0
+margin_top = 18.0
+margin_right = 289.0
+margin_bottom = 40.0
+custom_styles/hover = ExtResource( 11 )
+custom_styles/pressed = ExtResource( 11 )
+custom_styles/focus = ExtResource( 11 )
+custom_styles/disabled = ExtResource( 11 )
+custom_styles/normal = ExtResource( 11 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Back" type="Label" parent="Panel/ColorRect2/Back"]
+margin_left = 3.0
+margin_top = 5.0
+margin_right = 23.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 1 )
+text = "Back"
+
+[node name="Weapon" type="ScrollContainer" parent="Panel"]
+margin_left = 10.0
+margin_top = 41.0
+margin_right = 313.0
+margin_bottom = 231.0
+
+[node name="List" type="HBoxContainer" parent="Panel/Weapon"]
+margin_right = 80.0
+rect_min_size = Vector2( 80, 0 )
+
+[node name="Pedang" type="Control" parent="Panel/Weapon/List"]
+
+[node name="Halaman" type="ColorRect" parent="Panel/Weapon/List/Pedang"]
+margin_left = 22.0
+margin_top = 1.0
+margin_right = 102.0
+margin_bottom = 67.0
+color = Color( 0, 0, 0, 0.392157 )
+
+[node name="Sprite" type="Sprite" parent="Panel/Weapon/List/Pedang/Halaman"]
+position = Vector2( 41, 39 )
+scale = Vector2( 2.6, 1.8 )
+texture = ExtResource( 5 )
+
+[node name="Coin" type="TextureRect" parent="Panel/Weapon/List/Pedang/Halaman"]
+margin_left = 36.0
+margin_top = 70.0
+margin_right = 52.0
+margin_bottom = 86.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LabelHarga" type="Label" parent="Panel/Weapon/List/Pedang/Halaman/Coin"]
+margin_left = 17.0
+margin_top = 3.0
+margin_right = 31.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 5 )
+text = "10"
+
+[node name="LabelNama" type="Label" parent="Panel/Weapon/List/Pedang/Halaman"]
+margin_left = 20.0
+margin_top = 3.0
+margin_right = 64.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 6 )
+text = "Pedang"
+
+[node name="BeliPedang" type="Button" parent="Panel/Weapon/List/Pedang"]
+margin_left = 24.0
+margin_top = 70.0
+margin_right = 54.0
+margin_bottom = 87.0
+custom_fonts/font = SubResource( 2 )
+custom_styles/hover = ExtResource( 11 )
+custom_styles/pressed = ExtResource( 11 )
+custom_styles/focus = ExtResource( 11 )
+custom_styles/disabled = ExtResource( 11 )
+custom_styles/normal = ExtResource( 11 )
+text = "Beli"
+
+[node name="Pistol" type="Control" parent="Panel/Weapon/List"]
+margin_left = 4.0
+margin_right = 4.0
+
+[node name="Halaman" type="ColorRect" parent="Panel/Weapon/List/Pistol"]
+margin_left = 106.0
+margin_top = 1.0
+margin_right = 186.0
+margin_bottom = 67.0
+color = Color( 0, 0, 0, 0.392157 )
+
+[node name="Sprite" type="Sprite" parent="Panel/Weapon/List/Pistol/Halaman"]
+position = Vector2( 40, 40 )
+scale = Vector2( 0.0774194, 0.0857143 )
+texture = ExtResource( 4 )
+
+[node name="Diamond" type="TextureRect" parent="Panel/Weapon/List/Pistol/Halaman"]
+margin_left = 33.0
+margin_top = 66.0
+margin_right = 57.0
+margin_bottom = 90.0
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LabelHarga" type="Label" parent="Panel/Weapon/List/Pistol/Halaman/Diamond"]
+margin_left = 23.0
+margin_top = 6.0
+margin_right = 32.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 5 )
+text = "3"
+
+[node name="LabelNama" type="Label" parent="Panel/Weapon/List/Pistol/Halaman"]
+margin_left = 26.0
+margin_top = 4.0
+margin_right = 53.0
+margin_bottom = 18.0
+custom_fonts/font = SubResource( 6 )
+text = "Pistol"
+
+[node name="BeliPistol" type="Button" parent="Panel/Weapon/List/Pistol"]
+margin_left = 108.0
+margin_top = 70.0
+margin_right = 138.0
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 3 )
+custom_styles/hover = ExtResource( 11 )
+custom_styles/pressed = ExtResource( 11 )
+custom_styles/focus = ExtResource( 11 )
+custom_styles/disabled = ExtResource( 11 )
+custom_styles/normal = ExtResource( 11 )
+text = "Beli"
+
+[node name="Rifle" type="Control" parent="Panel/Weapon/List"]
+margin_left = 8.0
+margin_right = 8.0
+
+[node name="Halaman" type="ColorRect" parent="Panel/Weapon/List/Rifle"]
+margin_left = 190.0
+margin_top = 1.0
+margin_right = 270.0
+margin_bottom = 67.0
+color = Color( 0, 0, 0, 0.392157 )
+
+[node name="Sprite" type="Sprite" parent="Panel/Weapon/List/Rifle/Halaman"]
+position = Vector2( 39.75, 39 )
+scale = Vector2( 0.0791667, 0.113333 )
+texture = ExtResource( 3 )
+
+[node name="RedDiamond" type="TextureRect" parent="Panel/Weapon/List/Rifle/Halaman"]
+margin_left = 34.0
+margin_top = 67.0
+margin_right = 58.0
+margin_bottom = 91.0
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LabelHarga" type="Label" parent="Panel/Weapon/List/Rifle/Halaman/RedDiamond"]
+margin_left = 21.0
+margin_top = 6.0
+margin_right = 27.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 5 )
+text = "1"
+
+[node name="LabelNama" type="Label" parent="Panel/Weapon/List/Rifle/Halaman"]
+margin_left = 24.0
+margin_top = 5.0
+margin_right = 54.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 6 )
+text = "AK-47"
+
+[node name="BeliAK" type="Button" parent="Panel/Weapon/List/Rifle"]
+margin_left = 192.0
+margin_top = 70.0
+margin_right = 222.0
+margin_bottom = 89.0
+custom_fonts/font = SubResource( 4 )
+custom_styles/hover = ExtResource( 11 )
+custom_styles/pressed = ExtResource( 11 )
+custom_styles/focus = ExtResource( 11 )
+custom_styles/disabled = ExtResource( 11 )
+custom_styles/normal = ExtResource( 11 )
+text = "Beli"
+
+[node name="RedPotion" type="Control" parent="Panel/Weapon/List"]
+margin_left = 12.0
+margin_right = 12.0
+
+[node name="Halaman2" type="ColorRect" parent="Panel/Weapon/List/RedPotion"]
+margin_left = 10.0
+margin_top = 91.0
+margin_right = 90.0
+margin_bottom = 157.0
+color = Color( 0, 0, 0, 0.392157 )
+
+[node name="Sprite" type="Sprite" parent="Panel/Weapon/List/RedPotion/Halaman2"]
+position = Vector2( 41, 39 )
+scale = Vector2( 2.6, 1.8 )
+texture = ExtResource( 10 )
+
+[node name="Coin" type="TextureRect" parent="Panel/Weapon/List/RedPotion/Halaman2"]
+margin_left = 36.0
+margin_top = 69.0
+margin_right = 52.0
+margin_bottom = 85.0
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LabelHarga" type="Label" parent="Panel/Weapon/List/RedPotion/Halaman2/Coin"]
+margin_left = 17.0
+margin_top = 3.0
+margin_right = 31.0
+margin_bottom = 14.0
+custom_fonts/font = SubResource( 5 )
+text = "5"
+
+[node name="LabelNama" type="Label" parent="Panel/Weapon/List/RedPotion/Halaman2"]
+margin_left = 13.0
+margin_top = 3.0
+margin_right = 70.0
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 6 )
+text = "Red Potion"
+
+[node name="BeliRedPotion" type="Button" parent="Panel/Weapon/List/RedPotion"]
+margin_left = 12.0
+margin_top = 159.0
+margin_right = 42.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 4 )
+custom_styles/hover = ExtResource( 11 )
+custom_styles/pressed = ExtResource( 11 )
+custom_styles/focus = ExtResource( 11 )
+custom_styles/disabled = ExtResource( 11 )
+custom_styles/normal = ExtResource( 11 )
+text = "Beli"
+
+[connection signal="pressed" from="Panel/ColorRect2/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="Panel/Weapon/List/Pedang/BeliPedang" to="." method="_on_BeliPedang_pressed"]
+[connection signal="pressed" from="Panel/Weapon/List/Pistol/BeliPistol" to="." method="_on_BeliPistol_pressed"]
+[connection signal="pressed" from="Panel/Weapon/List/Rifle/BeliAK" to="." method="_on_BeliAK_pressed"]
+[connection signal="pressed" from="Panel/Weapon/List/RedPotion/BeliRedPotion" to="." method="_on_BeliRedPotion_pressed"]

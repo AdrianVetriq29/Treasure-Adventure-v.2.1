@@ -1,0 +1,49 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://TampilanShop.gd" type="Script" id=1]
+[ext_resource path="res://StarShop.gd" type="Script" id=2]
+[ext_resource path="res://TampilanShop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 01.png" type="Texture" id=4]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 03.png" type="Texture" id=5]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 08.png" type="Texture" id=6]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 07.png" type="Texture" id=7]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 04.png" type="Texture" id=8]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 05.png" type="Texture" id=9]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 06.png" type="Texture" id=10]
+[ext_resource path="res://assets/The Crusty Crew/Pink Star/01-Idle/Idle 02.png" type="Texture" id=11]
+
+[sub_resource type="RectangleShape2D" id=121]
+
+[sub_resource type="SpriteFrames" id=122]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 7 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[node name="StarShop" type="Area2D"]
+position = Vector2( 2693, 242 )
+collision_layer = 0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 2 )
+shape = SubResource( 121 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 122 )
+frame = 3
+playing = true
+
+[node name="TampilanShop" type="CanvasLayer" parent="." instance=ExtResource( 3 )]
+pause_mode = 2
+layer = 2
+offset = Vector2( 0, 500 )
+transform = Transform2D( 1, 0, 0, 1, 0, 500 )
+script = ExtResource( 1 )
+
+[connection signal="body_entered" from="." to="." method="_on_StarShop_body_entered"]

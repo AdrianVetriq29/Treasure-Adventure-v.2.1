@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/762x54r Double Tap Isolated MP3.mp3-dae2816b7888e0e6a097d18c43f136da.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Isolated/7.62x54R/MP3/762x54r Double Tap Isolated MP3.mp3"
+dest_files=[ "res://.import/762x54r Double Tap Isolated MP3.mp3-dae2816b7888e0e6a097d18c43f136da.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

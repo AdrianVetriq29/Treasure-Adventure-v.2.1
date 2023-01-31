@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/AK Reload Full MP3.mp3-796e2238b4f943cfc64407d6c22c151d.mp3str"
+
+[deps]
+
+source_file="res://soundsandmusic/Snake's Authentic Gun Sounds And More/Snake's Authentic Gun Sounds/Reloads, Cycling & More/MP3/AK Reload Full MP3.mp3"
+dest_files=[ "res://.import/AK Reload Full MP3.mp3-796e2238b4f943cfc64407d6c22c151d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
